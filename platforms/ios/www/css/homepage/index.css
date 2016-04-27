@@ -20,14 +20,50 @@ div.main div.navigation_bar{
     left: 0;
     margin: 0;
     background-color: #0185f1;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
-div.main div.navigation_bar div.navigation_item{
+div.main div.navigation_bar div.navigation_window{
+    position: absolute;
+    display: block;
+    height: 95px;
+    width: 630px;
+    top: 0;
+    left: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    z-index: 25;
+}
+div.main div.navigation_bar div.navigation_window div.navigation_area{
+    position: relative;
+    display: block;
+    height: 95px;
+    margin: 0;
+    font-size: 0;
+}
+div.main div.navigation_bar div.navigation_window div.navigation_area div.navigation_item{
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     height: 95px;
     width: 105px;
     margin: 0;
+    text-align: center;
+}
+div.main div.navigation_bar div.navigation_window div.navigation_area div.navigation_item span{
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    font-size: 35px;
+    color: #9fc4fa;
+}
+div.main div.navigation_bar div.navigation_window div.navigation_area div.navigation_item.active span{
+    color: #ffffff;
+}
+div.main div.navigation_bar div.navigation_window div.navigation_area div.navigation_item span.subscribe_topic_id{
+    display: none;
 }
 div.main div.navigation_bar div.more{
     position: absolute;
@@ -69,5 +105,36 @@ div.main div.bottom_tab_bar{
     bottom: 0;
     left: 0;
     margin: 0;
-    background-color: #0185f1;
+    background-color: #ffffff;
+    font-size: 0;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item{
+    position: relative;
+    display: inline-block;
+    height: 95px;
+    width: 180px;
+    margin: 0;
+    text-align: center;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item img{
+    position: relative;
+    display: block;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    height: 45px;
+    width: 45px;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item span{
+    position: absolute;
+    display: block;
+    width: 180px;
+    text-align: center;
+    font-size: 22px;
+    color: #666666;
+    top: 69px;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item.active span{
+    color: #1788ed;
 }

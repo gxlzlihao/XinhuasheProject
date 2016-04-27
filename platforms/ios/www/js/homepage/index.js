@@ -38,15 +38,52 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
 
-        initialize_page_elements();
-
         console.log('Received Event: ' + id);
     }
 };
 
 app.initialize();
 
-var initialize_page_elements = function() {
-    var _txt = $('div.navigation_item:first-child').children('span').text();
-    alert( _txt );
-}
+
+$(document).ready(function(){
+
+    var navigation_item_number = $('div.navigation_bar').children('div.navigation_window').children('div.navigation_area').children('div.navigation_item').length;
+    $('div.navigation_area').css({'width':( navigation_item_number * 105 ) +'px'});
+
+    $('div.navigation_bar').children('div.navigation_window').children('div.navigation_area').children('div.navigation_item').each(function(){
+        // when the navigation item is clicked
+        $(this).click(function(){
+            $(this).siblings('div.navigation_item').each(function(){
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+        });
+    });
+    
+    $('div.bottom_tab_item').click(function(){
+        if ( $(this).attr('id') != 'bottom_loading_item' ) {
+            $(this).siblings('div.bottom_tab_item').each(function() {
+                $(this).removeClass('active');
+            });
+            $(this).addClass('active');
+
+            var current_item_id = $(this).attr('id');
+            if( current_item_id == 'bottom_topic_item' ) {
+                // TODO: switch the displayed content to the hot topic page
+            }
+            if ( current_item_id == 'bottom_search_item' ) {
+                // TODo: switch the displayed content to the search page
+            }
+            if ( current_item_id == 'bottom_profile_item' ) {
+                // TODO:  switch the displayed content to the user profile page
+            }
+        }
+    });
+
+    $('div.bottom_tab_item#bottom_loading_item').mousedown(function(){
+        $(this).children('span').css({'color':'#1788ed'});
+    });
+    $('div.bottom_tab_item#bottom_loading_item').mouseup(function(){
+        $(this).children('span').css({'color':'#666666'});
+    });
+});
