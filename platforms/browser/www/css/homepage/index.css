@@ -10,6 +10,8 @@ div.main{
     background-color: white;
     width: 720px;
 }
+
+/* The top subscribe topic bar */
 div.main div.navigation_bar{
     position: fixed;
     display: block;
@@ -57,7 +59,13 @@ div.main div.navigation_bar div.navigation_window div.navigation_area div.naviga
     margin-right: auto;
     margin-bottom: 0;
     font-size: 35px;
+    color: #9fc4fa;
+}
+div.main div.navigation_bar div.navigation_window div.navigation_area div.navigation_item.active span{
     color: #ffffff;
+}
+div.main div.navigation_bar div.navigation_window div.navigation_area div.navigation_item span.subscribe_topic_id{
+    display: none;
 }
 div.main div.navigation_bar div.more{
     position: absolute;
@@ -79,6 +87,8 @@ div.main div.navigation_bar div.more img{
     margin-top: 27px;
     margin-bottom: 0;
 }
+
+/* The center content panel */
 div.main div.content_window{
     position: fixed;
     display: block;
@@ -90,6 +100,88 @@ div.main div.content_window{
     overflow-y: scroll;
     margin: 0;
 }
+div.main div.content_window div.headline_item{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 720px;
+    height: 400px;
+}
+div.main div.content_window div.headline_item img{
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 720px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+div.main div.content_window div.headline_item span{
+    position: absolute;
+    display: block;
+    margin: 0;
+    left: 20px;
+    bottom: 24px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    z-index: 2;
+}
+div.main div.content_window div.news_item{
+    position: relative;
+    display: block;
+    margin: 0;
+    background-color: white;
+    width: 720px;
+    height: 204px;
+    border-bottom: 1px solid #dddddd;
+}
+div.main div.content_window div.news_item img{
+    position: absolute;
+    display: block;
+    height: 164px;
+    width: 215px;
+    margin: 0 20px;
+    top: 20px;
+    left: 0;
+}
+div.main div.content_window div.news_item div.news_content{
+    position: absolute;
+    display: block;
+    height: 204px;
+    width: 445px;
+    margin: 0;
+    top: 0;
+    right: 20px;
+}
+div.main div.content_window div.news_item div.news_content span.news_title{
+    position: relative;
+    display: block;
+    font-size: 32px;
+    color: #030303;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 33px;
+    margin-top: 40px;
+}
+div.main div.content_window div.news_item div.news_content p.news_brief_description{
+    position: relative;
+    display: block;
+    font-size: 28px;
+    color: #777777;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 445px;
+    height: 80px;
+    line-height: 45px;
+    text-overflow: ellipsis;
+}
+
+/* The bottom bar */
 div.main div.bottom_tab_bar{
     position: fixed;
     display: block;
@@ -99,5 +191,37 @@ div.main div.bottom_tab_bar{
     bottom: 0;
     left: 0;
     margin: 0;
-    background-color: #0185f1;
+    background-color: #ffffff;
+    font-size: 0;
+    border-bottom: 2px solid #dddddd;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item{
+    position: relative;
+    display: inline-block;
+    height: 95px;
+    width: 180px;
+    margin: 0;
+    text-align: center;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item img{
+    position: relative;
+    display: block;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    height: 45px;
+    width: 45px;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item span{
+    position: absolute;
+    display: block;
+    width: 180px;
+    text-align: center;
+    font-size: 22px;
+    color: #666666;
+    top: 69px;
+}
+div.main div.bottom_tab_bar div.bottom_tab_item.active span{
+    color: #1788ed;
 }

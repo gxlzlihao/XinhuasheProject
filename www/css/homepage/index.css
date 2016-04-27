@@ -96,9 +96,116 @@ div.main div.content_window{
     width: 720px;
     height: 1050px;
     top: 145px;
-    background-color: red;
+    background-color: white;
     overflow-y: scroll;
     margin: 0;
+}
+div.main div.content_window div.headline_item{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 720px;
+    height: 400px;
+}
+div.main div.content_window div.headline_item img{
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 720px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+div.main div.content_window div.headline_item span{
+    position: absolute;
+    display: block;
+    margin: 0;
+    left: 20px;
+    bottom: 24px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    z-index: 2;
+}
+div.main div.content_window div.news_item{
+    position: relative;
+    display: block;
+    margin: 0;
+    background-color: white;
+    width: 720px;
+    height: 204px;
+    border-bottom: 1px solid #dddddd;
+}
+div.main div.content_window div.news_item span.news_id{
+    display: none;
+}
+div.main div.content_window div.news_item img{
+    position: absolute;
+    display: block;
+    height: 164px;
+    width: 215px;
+    margin: 0 20px;
+    top: 20px;
+    left: 0;
+}
+div.main div.content_window div.news_item div.news_content{
+    position: absolute;
+    display: block;
+    height: 204px;
+    width: 445px;
+    margin: 0;
+    top: 0;
+    right: 20px;
+}
+div.main div.content_window div.news_item div.news_content span.news_title{
+    position: relative;
+    display: block;
+    font-size: 32px;
+    color: #030303;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 33px;
+    margin-top: 40px;
+}
+div.main div.content_window div.news_item div.news_content p.news_brief_description{
+    position: relative;
+    display: block;
+    font-size: 28px;
+    color: #777777;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 445px;
+    height: 80px;
+    line-height: 44px;
+    text-overflow: ellipsis;
+}
+div.main div.content_window div.news_item div.news_content div.news_infor{
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 20px;
+    background: white;
+}
+div.main div.content_window div.news_item div.news_content div.news_infor span.news_time_ago{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-size: 22px;
+    color: #777777;
+}
+div.main div.content_window div.news_item div.news_content div.news_infor span.news_comemnt_count{
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    font-size: 22px;
+    color: #777777;
 }
 
 /* The bottom bar */
@@ -113,6 +220,7 @@ div.main div.bottom_tab_bar{
     margin: 0;
     background-color: #ffffff;
     font-size: 0;
+    border-bottom: 2px solid #dddddd;
 }
 div.main div.bottom_tab_bar div.bottom_tab_item{
     position: relative;
