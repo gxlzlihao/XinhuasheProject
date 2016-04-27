@@ -28,22 +28,39 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=0.575, maximum-scale=0.575, minimum-scale=0.575, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/common/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/homepage/index.css">
+
+        <!-- The javascript library -->
+        <script type="text/javascript" src="js/jquery/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="js/homepage/index.js"></script>
+
+        <title>Homepage</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+
+        <div class="main">
+            <div class="navigation_bar">
+                <div class="navigation_item active"><span>要闻</span></div>
+                <div class="navigation_item"><span>现场</span></div>
+                <div class="navigation_item"><span>房产</span></div>
+                <div class="navigation_item"><span>国际</span></div>
+                <div class="navigation_item"><span>财经</span></div>
+                <div class="navigation_item"><span>体育</span></div>
+                <div class="navigation_item"><span>娱乐</span></div>
+                <div class="more">
+                    <image src="img/homepage/navigation_bar_more_icon.png" alt="img/homepage/navigation_bar_more_icon.png"></image>
+                </div>
             </div>
+            <div class="content_window"></div>
+            <div class="bottom_tab_bar"></div>
         </div>
+
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

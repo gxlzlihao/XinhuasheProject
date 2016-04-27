@@ -37,15 +37,16 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        initialize_page_elements();
 
         console.log('Received Event: ' + id);
     }
 };
 
 app.initialize();
+
+var initialize_page_elements = function() {
+    var _txt = $('div.navigation_item:first-child').children('span').text();
+    alert( _txt );
+}
