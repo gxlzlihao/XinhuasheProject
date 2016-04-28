@@ -10,6 +10,7 @@ div#main{
     background-color: white;
     width: 720px;
     margin: 0;
+    overflow: hidden;
 }
 
 /* To setup the layout of the top bar */
@@ -42,10 +43,216 @@ div#main div.content{
     top: 145px;
     left: 0;
     width: 720px;
-    height: 1000px;
+    height: 2000px;
     margin: 0;
     background-color: white;
     overflow-y: scroll;
+}
+div#main div.content span#news_id{
+    display: none;
+}
+div#main div.content div.subscribe_window{
+    position: relative;
+    display: block;
+    width: 720px;
+    height: 80px;
+    margin: 0;
+    background: transparent;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+div#main div.content div.subscribe_window div.subscribe_area{
+    position: relative;
+    display: block;
+    height: 80px;
+    width: 1080px;
+    font-size: 0;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 80px;
+    width: 360px;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item span.subscribe_item_id{
+    display: none;
+}
+div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item div.subscribe_button{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background-color: white;
+    left: 20px;
+    top: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item div.subscribe_button img{
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item div:last-child{
+    position: absolute;
+    display: block;
+    margin: 0;
+    left: 70px;
+    height: 80px;
+    font-size: 0;
+    background: transparent;
+    overflow-x: scroll;
+}
+div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item div:last-child span.subscribe_title{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+    margin: 27px 0;
+    letter-spacing: 1px;
+}
+div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item div:last-child span.subscribe_count{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    font-size: 20px;
+    color: #9d9d9d;
+}
+div#main div.content span.news_title{
+    position: relative;
+    display: block;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+div#main div.content div.news_infor{
+    position: relative;
+    display: block;
+    width: 720px;
+    margin: 0;
+    font-size: 0;
+}
+div#main div.content div.news_infor div.news_source{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 28px;
+    border: 1px solid #ff9e00;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+div#main div.content div.news_infor div.news_source span{
+    position: relative;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 24px;
+    color: #ff9e00;
+}
+div#main div.content div.news_infor div.news_reliability{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    background: transparent;
+    margin: 0;
+}
+div#main div.content div.news_infor div.news_reliability span:first-child{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-right: 5px;
+    margin-left: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: black;
+}
+div#main div.content div.news_infor div.news_reliability span:last-child{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    color: #ff9e00;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+div#main div.content div.news_infor div.news_time{
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 0;
+    height: 30px;
+    margin: 0;
+    background: transparent;
+}
+div#main div.content div.news_infor div.news_time span{
+    position: relative;
+    display: block;
+    font-size: 24px;
+    margin: 3px 0;
+    color: black;
+}
+div#main div.content div.news_content{
+    position: relative;
+    display: block;
+    margin: 0 20px;
+    width: 680px;
+    background: transparent;
+}
+div#main div.content div.news_content img{
+    position: relative;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 680px;
+    height: 325px;
+}
+div#main div.content div.news_content img:first-child{
+    margin-top: 30px;
+}
+div#main div.content div.news_content p{
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 680px;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 1px;
 }
 
 /* To setup the bottom bar */

@@ -7,7 +7,9 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
+    <!-- To setup the homepage of the cordova project -->
     <content src="news_details.html" />
+
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
