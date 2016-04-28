@@ -96,7 +96,7 @@ div.main div.content_window{
     width: 720px;
     height: 1050px;
     top: 145px;
-    background-color: red;
+    background-color: white;
     overflow-y: scroll;
     margin: 0;
 }
@@ -138,6 +138,9 @@ div.main div.content_window div.news_item{
     height: 204px;
     border-bottom: 1px solid #dddddd;
 }
+div.main div.content_window div.news_item span.news_id{
+    display: none;
+}
 div.main div.content_window div.news_item img{
     position: absolute;
     display: block;
@@ -177,8 +180,32 @@ div.main div.content_window div.news_item div.news_content p.news_brief_descript
     margin-bottom: 20px;
     width: 445px;
     height: 80px;
-    line-height: 45px;
+    line-height: 44px;
     text-overflow: ellipsis;
+}
+div.main div.content_window div.news_item div.news_content div.news_infor{
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 20px;
+    background: white;
+}
+div.main div.content_window div.news_item div.news_content div.news_infor span.news_time_ago{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-size: 22px;
+    color: #777777;
+}
+div.main div.content_window div.news_item div.news_content div.news_infor span.news_comemnt_count{
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    font-size: 22px;
+    color: #777777;
 }
 
 /* The bottom bar */
