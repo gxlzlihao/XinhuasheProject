@@ -96,6 +96,7 @@ div.main div.content_window{
     width: 720px;
     height: 1050px;
     top: 145px;
+    left: 0;
     background-color: white;
     overflow-y: scroll;
     margin: 0;

@@ -86,4 +86,20 @@ $(document).ready(function(){
     $('div.bottom_tab_item#bottom_loading_item').mouseup(function(){
         $(this).children('span').css({'color':'#666666'});
     });
+
+    $('div.news_item').click(function(){
+        window.location.href = window.location.href.replace('index', 'news_details');
+    });
+
+    // $('div.content_window').scroll(function(){
+    //     // var _value = $(this).children('div:first-child').scrollTop();
+    //     var _value = $(this).scrollTop();
+    //     console.log( "test: " + _value );
+    //
+    //     if ( _value > $(this).children('div:first-child').height() ) {
+    //         $(this).children('div:first-child').remove();
+    //         console.log( "remove the first list item" );
+    //         $(this).children('div:last-child').clone().appendTo(this);
+    //     }
+    // });
 });

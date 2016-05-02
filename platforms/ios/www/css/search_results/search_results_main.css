@@ -1,0 +1,261 @@
+body{
+    position: fixed;
+    display: block;
+    overflow: scroll;
+    top: 0;
+}
+div#main{
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 720px;
+}
+
+div#main div.top_bar{
+    position: fixed;
+    display: block;
+    z-index: 150;
+    width: 720px;
+    height: 100px;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    margin: 0;
+}
+div#main div.top_bar img.top_back_button{
+    position: absolute;
+    display: block;
+    margin: 0;
+    height: 40px;
+    width: 25px;
+    top: 30px;
+    left: 30px;
+}
+div#main div.top_bar div.input_field{
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 535px;
+    height: 70px;
+    border: 1px solid grey;
+    background-color: white;
+    top: 15px;
+    left: 83px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 0;
+}
+div#main div.top_bar div.input_field img{
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+div#main div.top_bar div.input_field input[type=text]{
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 445px;
+    margin: 0;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    font-size: 30px;
+    color: grey;
+    padding: 0;
+}
+div#main div.top_bar button#search_submit{
+    position: absolute;
+    display: block;
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    height: 30px;
+    top: 35px;
+    right: 30px;
+    color: #007ae3;
+    border: 0;
+    background-color: white;
+    padding: 0;
+}
+
+/* The display of the search results */
+div#main div#search_result_window{
+    position: fixed;
+    display: block;
+    width: 720px;
+    height: 1100px;
+    top: 150px;
+    margin: 0;
+    overflow-y: scroll;
+}
+div#main div#search_result_window div.search_results{
+    position: relative;
+    display: block;
+    width: 720px;
+    margin: 0;
+}
+div#main div#search_result_window div.search_results div.banner_area{
+    position: relative;
+    display: block;
+    width: 720px;
+    margin: 0;
+    background-color: white;
+}
+div#main div#search_result_window div.search_results div.banner_area img.banner_picture{
+    position: relative;
+    display: block;
+    width: 720px;
+    height: 255px;
+    margin: 0;
+    padding: 0;
+}
+div#main div#search_result_window div.search_results div.banner_area div{
+    position: relative;
+    display: block;
+    width: 720px;
+    height: 75px;
+    text-align: right;
+    font-size: 0;
+}
+div#main div#search_result_window div.search_results div.banner_area div button{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-top: 24px;
+    border: 2px solid #007cf5;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #007cf5;
+}
+div#main div#search_result_window div.search_results div.banner_area div button:last-child{
+    margin-right: 25px;
+}
+div#main div#search_result_window div.search_results div.result_item{
+    position: relative;
+    display: block;
+    width: 680px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 2px solid #e7e7e7;
+    font-size: 0;
+    overflow: hidden;
+}
+div#main div#search_result_window div.search_results div.result_item img.result_picture{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 155px;
+    width: 215px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 80px;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 445px;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content span.result_title{
+    position: relative;
+    display: block;
+    color: black;
+    margin-top: 35px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content p{
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 45px;
+    color: #777777;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor{
+    position: relative;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 445px;
+    height: 30px;
+    font-size: 0;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span.result_source{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color:  #ffa400;
+    background-color: white;
+    border: 1px solid #ffa400;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span:nth-child(2){
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #777777;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 5px;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span.result_reliability{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffa400;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span.result_comment_count{
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    color: #777777;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 5px;
+    right: 0;
+    top: 0;
+}

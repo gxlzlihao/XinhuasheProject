@@ -9,8 +9,6 @@ div#main{
     display: block;
     background-color: white;
     width: 720px;
-    margin: 0;
-    overflow: hidden;
 }
 
 /* To setup the layout of the top bar */
@@ -43,8 +41,11 @@ div#main div.content{
     top: 145px;
     left: 0;
     width: 720px;
-    height: 2000px;
-    margin: 0;
+    height: 1050px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 100px;
     background-color: white;
     overflow-y: scroll;
 }
