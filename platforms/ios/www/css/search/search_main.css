@@ -1,0 +1,170 @@
+body{
+    position: fixed;
+    display: block;
+    overflow: scroll;
+    top: 0;
+}
+div#main{
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 720px;
+}
+
+/* The css layout for the top bar */
+div#main div.top_bar{
+    position: fixed;
+    display: block;
+    z-index: 150;
+    width: 720px;
+    height: 100px;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    margin: 0;
+    border-bottom: 1px solid #777777;
+}
+div#main div.top_bar img#top_back_button{
+    position: absolute;
+    display: block;
+    margin: 0;
+    height: 40px;
+    width: 25px;
+    top: 30px;
+    left: 30px;
+}
+div#main div.top_bar div.input_field{
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 535px;
+    height: 70px;
+    border: 1px solid #777777;
+    background-color: white;
+    top: 15px;
+    left: 83px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 0;
+}
+div#main div.top_bar div.input_field img{
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+div#main div.top_bar div.input_field input[type=text]{
+    position: absolute;
+    display: block;
+    height: 30px;
+    width: 445px;
+    margin: 0;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    font-size: 28px;
+    color: #777777;
+    padding: 0;
+}
+div#main div.top_bar button#search_submit{
+    position: absolute;
+    display: block;
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    height: 30px;
+    top: 35px;
+    right: 30px;
+    color: #007ae3;
+    border: 0;
+    background-color: white;
+    padding: 0;
+}
+
+/* The css layout for the search reminds panel */
+div#main div.search_reminds{
+    position: fixed;
+    display: block;
+    top: 150px;
+    width: 720px;
+    margin: 0;
+    padding: 0;
+}
+div#main div.search_reminds div{
+    position: relative;
+    display: block;
+    width: 670px;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+}
+div#main div.search_reminds div span.section_title{
+    position: relative;
+    display: block;
+    width: 670px;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    color: #777777;
+    font-size: 30px;
+}
+div#main div.search_reminds div span:not(.section_title){
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 295px;
+    border: 1px solid #777777;
+    color: black;
+    background-color: white;
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+div#main div.search_reminds div span:not(.section_title):nth-child(odd){
+    margin-left: 30px;
+}
+div#main div.search_reminds div.history span:not(.section_title){
+    position: relative;
+    display: block;
+    width: 670px;
+    text-align: left;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 35px;
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 30px;
+    border: 0;
+}
+div#main div.search_reminds div.history span:not(.section_title):nth-child(2){
+    margin-top: 25px;
+}
+
+
+div#main div.search_reminds div.children_search{
+    display: none;
+}
+div#main div.search_reminds div.related_people{
+    display: none;
+}

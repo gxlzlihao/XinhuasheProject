@@ -11,6 +11,7 @@ div#main{
     width: 720px;
 }
 
+/* The css layout for the top bar */
 div#main div.top_bar{
     position: fixed;
     display: block;
