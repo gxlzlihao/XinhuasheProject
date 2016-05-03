@@ -103,7 +103,6 @@ div#main div.main_content div.current_subscribe div.subscribe_item span{
 /* The css layout for the subscribe columns search panel */
 div#main div.main_content div.subscribe_recommendation{
     position: relative;
-    font-size: 0;
     overflow: hidden;
 }
 div#main div.main_content div.subscribe_recommendation div.subscribe_search{
@@ -115,7 +114,6 @@ div#main div.main_content div.subscribe_recommendation div.subscribe_search{
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    padding: 0;
     font-size: 0;
 }
 div#main div.main_content div.subscribe_recommendation div.subscribe_search div.input_field{
