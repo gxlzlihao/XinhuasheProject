@@ -12,10 +12,9 @@ div#main{
 }
 
 /* The css layout for the top bar */
-div#main div.top_bar{
+div#main div#top_bar{
     position: fixed;
     display: block;
-    z-index: 150;
     width: 720px;
     height: 100px;
     top: 50px;
@@ -24,7 +23,7 @@ div#main div.top_bar{
     overflow-y: hidden;
     margin: 0;
 }
-div#main div.top_bar img.top_back_button{
+div#main div#top_bar img.top_back_button{
     position: absolute;
     display: block;
     margin: 0;
@@ -33,7 +32,7 @@ div#main div.top_bar img.top_back_button{
     top: 30px;
     left: 30px;
 }
-div#main div.top_bar div.input_field{
+div#main div#top_bar div.input_field{
     position: absolute;
     display: block;
     margin: 0;
@@ -48,7 +47,7 @@ div#main div.top_bar div.input_field{
     -webkit-border-radius: 10px;
     font-size: 0;
 }
-div#main div.top_bar div.input_field img{
+div#main div#top_bar div.input_field img{
     position: relative;
     display: block;
     height: 30px;
@@ -58,7 +57,7 @@ div#main div.top_bar div.input_field img{
     margin-left: 20px;
     margin-right: 0;
 }
-div#main div.top_bar div.input_field input[type=text]{
+div#main div#top_bar div.input_field input[type=text]{
     position: absolute;
     display: block;
     height: 30px;
@@ -71,7 +70,7 @@ div#main div.top_bar div.input_field input[type=text]{
     color: grey;
     padding: 0;
 }
-div#main div.top_bar button#search_submit{
+div#main div#top_bar button#search_submit{
     position: absolute;
     display: block;
     margin: 0;
@@ -86,177 +85,224 @@ div#main div.top_bar button#search_submit{
     padding: 0;
 }
 
-/* The display of the search results */
-div#main div#search_result_window{
+/* The css layout for the search result content */
+div#main div#result_list{
     position: fixed;
     display: block;
     width: 720px;
-    height: 1100px;
+    height: 1130px;
     top: 150px;
-    margin: 0;
+    left: 0;
+    background-color: #f4f4f4;
     overflow-y: scroll;
-}
-div#main div#search_result_window div.search_results{
-    position: relative;
-    display: block;
-    width: 720px;
     margin: 0;
 }
-div#main div#search_result_window div.search_results div.banner_area{
+div#main div#result_list div.result_item{
     position: relative;
     display: block;
-    width: 720px;
-    margin: 0;
-    background-color: white;
-}
-div#main div#search_result_window div.search_results div.banner_area img.banner_picture{
-    position: relative;
-    display: block;
-    width: 720px;
-    height: 255px;
-    margin: 0;
-    padding: 0;
-}
-div#main div#search_result_window div.search_results div.banner_area div{
-    position: relative;
-    display: block;
-    width: 720px;
-    height: 75px;
-    text-align: right;
-    font-size: 0;
-}
-div#main div#search_result_window div.search_results div.banner_area div button{
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    height: 50px;
-    margin-left: 0;
-    margin-right: 15px;
+    background: transparent;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-top: 24px;
-    border: 2px solid #007cf5;
-    border-radius: 30px;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    color: white;
-    font-size: 25px;
-    letter-spacing: 1px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: #007cf5;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 680px;
+    overflow: hidden;
 }
-div#main div#search_result_window div.search_results div.banner_area div button:last-child{
-    margin-right: 25px;
-}
-div#main div#search_result_window div.search_results div.result_item{
+div#main div#result_list div.result_item>h1{
     position: relative;
     display: block;
     width: 680px;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 30px;
+    color: #777777;
+}
+div#main div#result_list div.result_item div.topic_result_item{
+    position: relative;
+    display: block;
+    width: 680px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: white;
+}
+div#main div#result_list div.result_item div.topic_result_item div.title{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 680px;
+    height: 80px;
+    font-size: 0;
+}
+div#main div#result_list div.result_item div.topic_result_item div.title span.title{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    width: 610px;
+}
+div#main div#result_list div.result_item div.topic_result_item div.title img.enter_details{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 20px;
+}
+div#main div#result_list div.result_item div.topic_result_item div.banner{
+    position: relative;
+    display: block;
+    width: 680px;
+    overflow: hidden;
+}
+div#main div#result_list div.result_item div.topic_result_item div.banner img{
+    position: relative;
+    display: block;
+    width: 640px;
+    height: 255px;
+    margin-top: 0;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+div#main div#result_list div.result_item div.news_result_item{
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 680px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
     margin-bottom: 0;
-    border-bottom: 2px solid #e7e7e7;
     font-size: 0;
     overflow: hidden;
 }
-div#main div#search_result_window div.search_results div.result_item img.result_picture{
+div#main div#result_list div.result_item div.news_result_item div.left{
     position: relative;
     display: inline-block;
-    vertical-align: middle;
-    height: 155px;
-    width: 215px;
-    margin-top: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 80px;
-}
-div#main div#search_result_window div.search_results div.result_item div.result_content{
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 445px;
+    vertical-align: top;
+    width: 200px;
+    height: 150px;
     margin-left: 20px;
+    margin-top: 20px;
     margin-right: 0;
+    margin-bottom: 0;
+}
+div#main div#result_list div.result_item div.news_result_item div.left img{
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 128px;
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 20px;
     margin-bottom: 0;
 }
-div#main div#search_result_window div.search_results div.result_item div.result_content span.result_title{
+div#main div#result_list div.result_item div.news_result_item div.right{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 440px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+div#main div#result_list div.result_item div.news_result_item div.right div.news_title{
     position: relative;
     display: block;
-    color: black;
-    margin-top: 35px;
+    width: 440px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    margin-top: 5px;
+}
+div#main div#result_list div.result_item div.news_result_item div.right div.news_title span{
+    position: relative;
+    display: block;
     font-size: 30px;
+    color: black;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
 }
-div#main div#search_result_window div.search_results div.result_item div.result_content p{
+div#main div#result_list div.result_item div.news_result_item div.right div.news_item_info{
     position: relative;
     display: block;
-    margin-top: 30px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-    line-height: 45px;
-    color: #777777;
-}
-div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor{
-    position: relative;
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    width: 445px;
+    width: 440px;
     height: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
     font-size: 0;
+    text-align: left;
 }
-div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span.result_source{
+div#main div#result_list div.result_item div.news_result_item div.right div.news_item_info div.reliability{
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    color:  #ffa400;
-    background-color: white;
-    border: 1px solid #ffa400;
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 5px;
 }
-div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span:nth-child(2){
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    color: #777777;
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 12px;
-    padding-right: 5px;
+div#main div#result_list div.result_item div.news_result_item div.right div.news_item_info div.reliability img{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
-div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span.result_reliability{
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    color: #ffa400;
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 0;
-    padding-right: 0;
-}
-div#main div#search_result_window div.search_results div.result_item div.result_content div.result_infor span.result_comment_count{
+div#main div#result_list div.result_item div.news_result_item div.right div.news_item_info div.reliability span{
     position: absolute;
     display: block;
     font-size: 20px;
-    color: #777777;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 0;
-    padding-right: 5px;
-    right: 0;
+    width: 30px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+div#main div#result_list div.result_item div.news_result_item div.right div.news_item_info span.news_source{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 5px 0;
+    color: #a0a0a0;
+}
+div#main div#result_list div.result_item div.news_result_item div.right div.news_item_info span.news_comment_count{
+    position: absolute;
+    display: block;
     top: 0;
+    right: 0;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 5px;
+    color: #a0a0a0;
 }

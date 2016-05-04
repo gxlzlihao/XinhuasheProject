@@ -12,6 +12,7 @@ div#wrapper{
     top: 50px;
     left: 0;
     background-color: white;
+    overflow-y: scroll;
 }
 
 /* The css layout for the top banner area */
