@@ -35,6 +35,7 @@ div#main{
     width: 720px;
     height: 1050px;
     background-color: #f4f4f4;
+    overflow-y: scroll;
 }
 div#main div.section{
     position: relative;
