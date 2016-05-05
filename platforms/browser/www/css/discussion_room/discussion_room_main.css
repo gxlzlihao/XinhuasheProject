@@ -101,7 +101,7 @@ div#main div.section div.title h1{
 }
 
 /* The css layout for the 大事记 section */
-div#main div.section div.content{
+div#main div.section#timeline div.content{
     position: relative;
     display: block;
     margin: 0;
@@ -141,6 +141,3 @@ div#main div.section#timeline div.content div.item span.title{
     font-size: 30px;
     line-height: 40px;
 }
-
-/* The css layout for the 解读 section */
-div#main div.section#analysis

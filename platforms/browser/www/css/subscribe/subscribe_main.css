@@ -241,7 +241,7 @@ div#main div#content div.section div#search_bar button{
 }
 div#main div#content div.section div#search_results{
     position: relative;
-    display: block;
+    display: none;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
