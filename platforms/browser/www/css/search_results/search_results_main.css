@@ -108,6 +108,9 @@ div#main div#result_list div.result_item{
     width: 680px;
     overflow: hidden;
 }
+div#main div#result_list div.result_item:last-child{
+    margin-bottom: 20px;
+}
 div#main div#result_list div.result_item>h1{
     position: relative;
     display: block;

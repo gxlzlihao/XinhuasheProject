@@ -14,7 +14,7 @@
 
     <!-- The javascript library -->
     <script type="text/javascript" src="js/jquery/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery/jquery.mobile-1.4.5.min.js"></script>-->
     <script type="text/javascript" src="js/subscribe/subscribe_main.js"></script>
 
     <title>Subscribe</title>
@@ -32,6 +32,8 @@
         <div class="section">
             <div class="title">
                 <h1>当前栏目</h1>
+                <button id="subscribe_edit">编辑</button>
+                <button id="subscribe_edit_done" class="hide">完成</button>
             </div>
             <div id="current_subscribe" class="subscribe_gallery">
                 <div class="subscribe_item">
@@ -79,12 +81,11 @@
         <div class="section">
             <div class="title">
                 <h1>推荐订阅</h1>
-                <button>编辑</button>
             </div>
             <div id="search_bar">
                 <div id="input_field">
                     <image src="img/subscribe/search_icon.png" alt="img/subscribe/search_icon.png"></image>
-                    <input type="text" placeholder="输入你感兴趣的"/>
+                    <input type="text" placeholder="输入你感兴趣的">
                 </div>
                 <button>搜索</button>
             </div>

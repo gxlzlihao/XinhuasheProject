@@ -22,70 +22,119 @@
 <body>
 
 <div id="main">
-    <div class="top_bar">
+    <div id="top_bar">
         <div id="exit">
             <image src="img/subscribe/top_forward_button.png" alt="img/subscribe/top_forward_button.png"></image>
             <image src="img/subscribe/top_back_button.png" alt="img/subscribe/top_back_button.png"></image>
         </div>
     </div>
-    <div class="main_content">
-        <div class="current_subscribe">
-            <span class="title">当前栏目</span>
-            <div class="subscribe_item">
-                <span>要闻</span>
+    <div id="content">
+        <div class="section">
+            <div class="title">
+                <h1>当前栏目</h1>
+                <button id="subscribe_edit">编辑</button>
+                <button id="subscribe_edit_done" class="hide">完成</button>
             </div>
-            <div class="subscribe_item">
-                <span>两会</span>
-            </div>
-            <div class="subscribe_item">
-                <span>现场</span>
-            </div>
-            <div class="subscribe_item">
-                <span>房产</span>
-            </div>
-            <div class="subscribe_item">
-                <span>国际</span>
-            </div>
-            <div class="subscribe_item">
-                <span>财经</span>
-            </div>
-            <div class="subscribe_item">
-                <span>体育</span>
+            <div id="current_subscribe" class="subscribe_gallery">
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">要闻</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">体育</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">新闻</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">娱乐</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">科技</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">游戏</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">清华</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">北大</span>
+                    <image src="img/subscribe/delete.png" alt="img/subscribe/delete.png"></image>
+                </div>
             </div>
         </div>
-        <div class="subscribe_recommendation">
-            <span class="title">推荐订阅</span>
-            <div class="subscribe_search">
-                <div class="input_field">
+        <div class="section">
+            <div class="title">
+                <h1>推荐订阅</h1>
+            </div>
+            <div id="search_bar">
+                <div id="input_field">
                     <image src="img/subscribe/search_icon.png" alt="img/subscribe/search_icon.png"></image>
                     <input type="text" placeholder="输入你感兴趣的">
                 </div>
-                <button id="search_submit">搜索</button>
+                <button>搜索</button>
             </div>
-            <div class="gallery">
+            <div id="search_results">
+                <div class="result">
+                    <span>搜索结果一</span>
+                </div>
+                <div class="result">
+                    <span>搜索结果二</span>
+                </div>
+                <div class="result">
+                    <span>搜索结果三</span>
+                </div>
+                <div class="result">
+                    <span>搜索结果四</span>
+                </div>
+            </div>
+            <div id="subscribe_recommendation" class="subscribe_gallery">
                 <div class="subscribe_item">
                     <span class="subscribe_item_id">1</span>
-                    <span>三农</span>
+                    <span class="subscribe_item_title">要闻</span>
                 </div>
                 <div class="subscribe_item">
-                    <span class="subscribe_item_id">2</span>
-                    <span>改革</span>
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">体育</span>
                 </div>
                 <div class="subscribe_item">
-                    <span class="subscribe_item_id">3</span>
-                    <span>毕业生</span>
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">新闻</span>
                 </div>
                 <div class="subscribe_item">
-                    <span class="subscribe_item_id">4</span>
-                    <span>正能量</span>
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">娱乐</span>
                 </div>
                 <div class="subscribe_item">
-                    <span class="subscribe_item_id">5</span>
-                    <span>家居</span>
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">科技</span>
                 </div>
                 <div class="subscribe_item">
-                    <span class="subscribe_item_id">6</span>
-                    <span>历史</span>
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">游戏</span>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">清华</span>
+                </div>
+                <div class="subscribe_item">
+                    <span class="subscribe_item_id">1</span>
+                    <span class="subscribe_item_title">北大</span>
                 </div>
             </div>
         </div>
