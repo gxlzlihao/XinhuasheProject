@@ -80,11 +80,28 @@ $(document).ready(function(){
         }
     });
 
-    $('div.bottom_tab_item#bottom_loading_item').mousedown(function(){
+    $('div.bottom_tab_item#bottom_homepage_item').mousedown(function(){
+        $(this).children('img').attr('src','img/homepage/bottom_home_active_icon.png');
         $(this).children('span').css({'color':'#1788ed'});
     });
-    $('div.bottom_tab_item#bottom_loading_item').mouseup(function(){
+    $('div.bottom_tab_item#bottom_homepage_item').mouseup(function(){
+        $(this).children('img').attr('src','img/homepage/bottom_home_icon.png');
         $(this).children('span').css({'color':'#666666'});
+    });
+
+    $('div.bottom_tab_item#bottom_topic_item').click(function(){
+        console.log( "Go to the hot topics page" );
+        window.location.href = window.location.href.replace('index.html', 'hot_topic.html');
+    });
+
+    $('div.bottom_tab_item#bottom_search_item').click(function(){
+        console.log( "Go to the search page" );
+        window.location.href = window.location.href.replace('index.html', 'search.html');
+    });
+
+    $('div#edit_subscribes').click(function(){
+        console.log( "Go to the subscribe page" );
+        window.location.href = window.location.href.replace('index.html', 'subscribe.html');
     });
 
     $('div.news_item').click(function(){
