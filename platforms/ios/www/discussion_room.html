@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/discussion_room/discussion_room_main.css">
 
     <!-- The javascript library -->
-    <script type="text/javascript" src="js/jquery/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/common/jquery/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="js/discussion_room/discussion_room_main.js"></script>
 
     <title>Topic Discussion</title>
@@ -25,6 +25,17 @@
     <h1>研讨厅</h1>
 </div>
 <div id="main">
+    <div class="section" id="influence_map">
+        <div class="title">
+            <div class="head_icon">
+                <image src="img/discussion_room/time_icon.png" alt="img/discussion_room/time_icon.png"></image>
+            </div>
+            <h1>地图</h1>
+        </div>
+        <div class="content">
+            <div id="map" style="height:560px"></div>
+        </div>
+    </div>
     <div class="section" id="timeline">
         <div class="title">
             <div class="head_icon">
@@ -106,17 +117,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="influence_map">
-        <div class="title">
-            <div class="head_icon">
-                <image src="img/discussion_room/time_icon.png" alt="img/discussion_room/time_icon.png"></image>
-            </div>
-            <h1>地图</h1>
-        </div>
-        <div class="content">
-            <div id="map" style="height:560px"></div>
-        </div>
-    </div>
+    <!--  the map section location -->
     <div class="section" id="related_people">
         <div class="title">
             <div class="head_icon">
@@ -173,6 +174,9 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="js/common/echarts/echarts.js"></script>
+<script type="text/javascript" src="js/discussion_room/show_map.js"></script>
 
 </body>
 </html>

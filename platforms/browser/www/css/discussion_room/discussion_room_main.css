@@ -282,6 +282,10 @@ div#main div.section#opinions div.content div.item div.percentage_area span{
 }
 
 /* The css layout for the 地图 section */
+div#main div.section#influence_map div.content div#map{
+    position: relative;
+    display: block;
+}
 
 /* The css layout for the 影响力人物 section */
 div#main div.section#related_people div.content div.item{
