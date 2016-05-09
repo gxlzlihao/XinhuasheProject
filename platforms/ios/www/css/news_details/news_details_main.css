@@ -344,3 +344,115 @@ div#main div.bottom_bar img#add_collection{
     height: 50px;
     margin: 0;
 }
+
+/* The css layout for the comment panel */
+div#main div.content div.news_content div#comment_panel{
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 680px;
+    background-color: white;
+    padding: 0;
+}
+div#main div.content div.news_content div#comment_panel h1.title{
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 680px;
+    text-align: left;
+    font-size: 35px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    color: black;
+    border-bottom: 1px solid #e3e3e3;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 680px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 0;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.left{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 75px;
+    margin: 0;
+    padding: 0;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.left div.avatar{
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.left div.avatar img{
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 590px;
+    text-align: left;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right span.user_name{
+    position: relative;
+    display: block;
+    width: 590px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 30px;
+    color: #777777;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right span.time_stamp{
+    position: relative;
+    display: block;
+    width: 590px;
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: #777777;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right p{
+    position: relative;
+    display: block;
+    width: 590px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
+}

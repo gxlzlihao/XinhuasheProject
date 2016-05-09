@@ -2,7 +2,7 @@
  * Created by gxlzlihao on 16/5/10.
  */
 
-$(document).ready(function() {
+$(function() {
     require.config({
         paths: {
             echarts: '../common/echarts'
@@ -74,7 +74,6 @@ $(document).ready(function() {
             };
 
             myChart.setOption(option);
-            // window.onresize = myChart.resize;
         }
     );
 });

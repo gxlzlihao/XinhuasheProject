@@ -8,7 +8,7 @@
         Apache Cordova Team
     </author>
     <!-- To setup the homepage of the cordova project -->
-    <content src="discussion_room.html" />
+    <content src="news_details.html" />
 
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />

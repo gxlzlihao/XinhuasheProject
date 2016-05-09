@@ -62,6 +62,20 @@ div#main div.content div.subscribe_window{
     overflow-y: hidden;
     overflow-x: scroll;
 }
+div#main div.content div.subscribe_window img#right_more{
+    position: absolute;
+    display: block;
+    z-index: 10;
+    width: 12px;
+    height: 22px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    margin-left: 0;
+    margin-right: 0;
+    right: 20px;
+    left: 688px;
+    top: 0;
+}
 div#main div.content div.subscribe_window div.subscribe_area{
     position: relative;
     display: block;
@@ -184,28 +198,26 @@ div#main div.content div.news_infor div.news_reliability{
     height: 30px;
     background: transparent;
     margin: 0;
+    margin-left: 25px;
+    overflow: hidden;
 }
-div#main div.content div.news_infor div.news_reliability span:first-child{
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 24px;
-    margin-right: 5px;
-    margin-left: 0;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    color: black;
+div#main div.content div.news_infor div.news_reliability img{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    top: 0;
+    left: 0;
 }
-div#main div.content div.news_infor div.news_reliability span:last-child{
+div#main div.content div.news_infor div.news_reliability span{
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 24px;
-    color: #ff9e00;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    margin: 5px 0;
 }
 div#main div.content div.news_infor div.news_time{
     position: absolute;
@@ -343,4 +355,116 @@ div#main div.bottom_bar img#add_collection{
     width: 50px;
     height: 50px;
     margin: 0;
+}
+
+/* The css layout for the comment panel */
+div#main div.content div.news_content div#comment_panel{
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 680px;
+    background-color: white;
+    padding: 0;
+}
+div#main div.content div.news_content div#comment_panel h1.title{
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 680px;
+    text-align: left;
+    font-size: 35px;
+    line-height: 55px;
+    letter-spacing: 1px;
+    color: black;
+    border-bottom: 1px solid #e3e3e3;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 680px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 0;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.left{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 75px;
+    margin: 0;
+    padding: 0;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.left div.avatar{
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.left div.avatar img{
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 590px;
+    text-align: left;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right span.user_name{
+    position: relative;
+    display: block;
+    width: 590px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 30px;
+    color: #777777;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right span.time_stamp{
+    position: relative;
+    display: block;
+    width: 590px;
+    margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: #777777;
+}
+div#main div.content div.news_content div#comment_panel div.comment_item div.right p{
+    position: relative;
+    display: block;
+    width: 590px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
 }
