@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/discussion_room/discussion_room_main.css">
 
     <!-- The javascript library -->
-    <script type="text/javascript" src="js/jquery/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/common/jquery/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="js/discussion_room/discussion_room_main.js"></script>
 
     <title>Topic Discussion</title>
@@ -25,6 +25,17 @@
     <h1>研讨厅</h1>
 </div>
 <div id="main">
+    <div class="section" id="influence_map">
+        <div class="title">
+            <div class="head_icon">
+                <image src="img/discussion_room/time_icon.png" alt="img/discussion_room/time_icon.png"></image>
+            </div>
+            <h1>地图</h1>
+        </div>
+        <div class="content">
+            <div id="map" style="height:560px"></div>
+        </div>
+    </div>
     <div class="section" id="timeline">
         <div class="title">
             <div class="head_icon">
@@ -52,8 +63,8 @@
         </div>
         <div class="content">
             <div class="item">
-                <span class="item_title"></span>
-                <p></p>
+                <span class="item_title">两会后,这两天热烈讨论的热点有哪些?</span>
+                <p>两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济.</p>
                 <div class="item_info">
                     <div class="reliability">
                         <image src="img/discussion_room/credit_green.png" alt="img/discussion_room/credit_green.png"></image>
@@ -63,8 +74,8 @@
                 </div>
             </div>
             <div class="item">
-                <span class="item_title"></span>
-                <p></p>
+                <span class="item_title">两会后,这两天热烈讨论的热点有哪些?</span>
+                <p>两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济.</p>
                 <div class="item_info">
                     <div class="reliability">
                         <image src="img/discussion_room/credit_green.png" alt="img/discussion_room/credit_green.png"></image>
@@ -86,27 +97,165 @@
             <div class="item">
                 <span class="opinion_title">观点一</span>
                 <div class="percentage_area">
+                    <span>50%</span>
                     <div></div>
                 </div>
             </div>
             <div class="item">
                 <span class="opinion_title">观点二</span>
                 <div class="percentage_area">
+                    <span>30%</span>
                     <div></div>
                 </div>
             </div>
             <div class="item">
                 <span class="opinion_title">观点三</span>
                 <div class="percentage_area">
+                    <span>20%</span>
                     <div></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section" id="influence_map"></div>
-    <div class="section" id="related_people"></div>
-    <div class="section" id="trend"></div>
+    <!--  the map section location -->
+    <div class="section" id="related_people">
+        <div class="title">
+            <div class="head_icon">
+                <image src="img/discussion_room/light_icon.png" alt="img/discussion_room/light_icon.png"></image>
+            </div>
+            <h1>影响力人物</h1>
+        </div>
+        <div class="content">
+            <div class="item">
+                <span class="person_name">人物一</span>
+                <div class="number_area">
+                    <span>2809</span>
+                    <div></div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="person_name">人物二</span>
+                <div class="number_area">
+                    <span>1900</span>
+                    <div></div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="person_name">人物三</span>
+                <div class="number_area">
+                    <span>302</span>
+                    <div></div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="person_name">人物四</span>
+                <div class="number_area">
+                    <span>12</span>
+                    <div></div>
+                </div>
+            </div>
+            <div class="item">
+                <span class="person_name">人物五</span>
+                <div class="number_area">
+                    <span>11</span>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="trend">
+        <div class="title">
+            <div class="head_icon">
+                <image src="img/discussion_room/discussion_icon.png" alt="img/discussion_room/discussion_icon.png"></image>
+            </div>
+            <h1>趋势</h1>
+        </div>
+        <div class="content">
+        </div>
+    </div>
 </div>
+
+<script type="text/javascript" src="js/common/echarts/echarts.js"></script>
+<script type="text/javascript">
+    require.config({
+        paths: {
+            echarts: '../common/echarts'
+        }
+    });
+    require(
+            [
+                'echarts',
+                'echarts/chart/map'
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('map'));
+
+                var option = {
+
+                    tooltip : {
+                        trigger: 'item'
+                    },
+                    dataRange: {
+                        min: 0,
+                        max: 2500,
+                        x: 'left',
+                        y: 'bottom',
+                        text:['高','低'],           // 文本，默认为数值文本
+                        calculable : true
+                    },
+                    toolbox: {
+                        show: true,
+                        orient : 'vertical',
+                        x: 'right',
+                        y: 'center',
+                        feature : {
+                            mark : {show: true},
+                            dataView : {show: true, readOnly: false},
+                            restore : {show: true},
+                            saveAsImage : {show: true}
+                        }
+                    },
+                    series : [
+                        {
+                            name: 'iphone4',
+                            type: 'map',
+                            mapType: 'china',
+                            itemStyle:{
+                                normal:{label:{show:true}},
+                                emphasis:{label:{show:true}}
+                            },
+                            data:[
+                                {name: '北京',value: Math.round(0)},
+                                {name: '天津',value: Math.round(0)},
+                                {name: '上海',value: Math.round(0)},
+                                {name: '重庆',value: Math.round(0)},
+                                {name: '河北',value: Math.round(0)},
+                                {name: '安徽',value: Math.round(Math.random()*1000)},
+                                {name: '新疆',value: Math.round(Math.random()*1000)},
+                                {name: '浙江',value: Math.round(Math.random()*1000)},
+                                {name: '江西',value: Math.round(Math.random()*1000)},
+                                {name: '山西',value: Math.round(Math.random()*1000)},
+                                {name: '内蒙古',value: Math.round(Math.random()*1000)},
+                                {name: '吉林',value: Math.round(Math.random()*1000)},
+                                {name: '福建',value: Math.round(Math.random()*1000)},
+                                {name: '广东',value: Math.round(Math.random()*1000)},
+                                {name: '西藏',value: Math.round(Math.random()*1000)},
+                                {name: '四川',value: Math.round(Math.random()*1000)},
+                                {name: '宁夏',value: Math.round(Math.random()*1000)},
+                                {name: '香港',value: Math.round(Math.random()*1000)},
+                                {name: '澳门',value: Math.round(Math.random()*1000)}
+                            ]
+                        }
+                    ]
+                };
+
+                // 为echarts对象加载数据
+                myChart.setOption(option);
+                // window.onresize = myChart.resize;  //自适应屏幕大小
+            }
+    )
+</script>
 
 </body>
 </html>

@@ -28,4 +28,8 @@ $(document).ready(function(){
 
     //    TODO: remove the subscribe item from the database
     });
+
+    $('div#search_bar').children('button').click(function(){
+        $('div#search_results').css({'display':'block'});
+    });
 });
