@@ -13,13 +13,9 @@ $(document).ready(function(){
     }
 
     $('div.subscribe_window').scroll(function(){
-        if ( $('img#right_more').css('display') == 'block' ) {
-            var _n = $('img#right_more').clone();
-            $('img#right_more').remove();
-            _n.appendTo('div.subscribe_window');
-        }
-
-        console.log( "the right value of right arrow: " + $('img#right_more').scrollSnapPointsX );
+        // if ( $('img#right_more').css('display') == 'block' ) {
+        //     $('img#right_more').css({'right':'20px'});
+        // }
 
         if ( this.scrollLeft + this.clientWidth >= this.scrollWidth ) {
             $('img#right_more').css({'display':'none'});

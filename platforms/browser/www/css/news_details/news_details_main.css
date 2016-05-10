@@ -62,7 +62,7 @@ div#main div.content div.subscribe_window{
     overflow-y: hidden;
     overflow-x: scroll;
 }
-div#main div.content div.subscribe_window img#right_more{
+div#main div.content img#right_more{
     position: absolute;
     display: block;
     z-index: 10;
@@ -79,6 +79,7 @@ div#main div.content div.subscribe_window img#right_more{
 div#main div.content div.subscribe_window div.subscribe_area{
     position: relative;
     display: block;
+    /*top: 0;*/
     height: 80px;
     width: 1080px;
     font-size: 0;
