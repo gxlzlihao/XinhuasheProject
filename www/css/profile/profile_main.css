@@ -1,0 +1,116 @@
+body{
+    position: fixed;
+    display: block;
+    overflow: scroll;
+    top: 0;
+}
+div#wrapper{
+    position: fixed;
+    display: block;
+    width: 720px;
+    height: 1230px;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+div#wrapper div#banner{
+    position: relative;
+    display: block;
+    width: 720px;
+    height: 425px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-y: hidden;
+}
+div#wrapper div#banner img.background{
+    position: absolute;
+    display: block;
+    width: 720px;
+    height: 425px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+div#wrapper div#banner img.profile_head{
+    position: relative;
+    display: block;
+    width: 165px;
+    height: 165px;
+    margin-top: 110px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 0;
+}
+div#wrapper div#banner h1{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #f8f8f8;
+    letter-spacing: 1px;
+}
+
+/* The css layout for the button area */
+div#wrapper div#main{
+    position: relative;
+    display: block;
+    width: 720px;
+    background: transparent;
+}
+div#wrapper div#main div.section{
+    position: relative;
+    display: block;
+    width: 720px;
+    height: 90px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+div#wrapper div#main div.section img:first-of-type{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 0;
+}
+div#wrapper div#main div.section span{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+div#wrapper div#main div.section img:last-of-type{
+    position: absolute;
+    display: block;
+    height: 24px;
+    width: 12px;
+    margin: 0;
+    top: 33px;
+    right: 30px;
+}
+div#wrapper div#main div.section#favorite_item{
+    margin-top: 30px;
+}
+div#wrapper div#main div.section#comment_item{
+    margin-top: 2px;
+}
+div#wrapper div#main div.section#setting_item{
+    margin-top: 30px;
+}

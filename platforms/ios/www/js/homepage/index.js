@@ -39,6 +39,7 @@ var app = {
     receivedEvent: function(id) {
 
         console.log('Received Event: ' + id);
+
     }
 };
 
@@ -46,6 +47,22 @@ app.initialize();
 
 
 $(document).ready(function(){
+
+    // var db = new PGSQLitePlugin("testdb.sqlite3", function(dbResult, dbObject){
+    //     alert("Database status=" + dbResult.status);
+    //     alert("Database version=" + dbResult.version);
+    //     db = dbObject;
+    //
+    //     db.open(function(){
+    //         alert("open succeeds!");
+    //     }, function(){
+    //         alert("open error occurs!");
+    //     });
+    //
+    // }, function(err){
+    //     alert("Error create database::err=" + err);
+    // });
+
 
     var navigation_item_number = $('div.navigation_bar').children('div.navigation_window').children('div.navigation_area').children('div.navigation_item').length;
     $('div.navigation_area').css({'width':( navigation_item_number * 105 ) +'px'});
@@ -97,6 +114,11 @@ $(document).ready(function(){
     $('div.bottom_tab_item#bottom_search_item').click(function(){
         console.log( "Go to the search page" );
         window.location.href = window.location.href.replace('index.html', 'search.html');
+    });
+
+    $('div.bottom_tab_item#bottom_profile_item').click(function(){
+        console.log( "Go to the profile page" );
+        window.location.href = window.location.href.replace('index.html', 'profile.html');
     });
 
     $('div#edit_subscribes').click(function(){

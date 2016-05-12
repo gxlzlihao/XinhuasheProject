@@ -18,6 +18,11 @@ $(document).ready(function(){
         window.location.href = window.location.href.replace('hot_topic.html', 'search.html');
     });
 
+    $('div.bottom_tab_item#bottom_profile_item').click(function(){
+        console.log( "Go to the profile page" );
+        window.location.href = window.location.href.replace('hot_topic.html', 'profile.html');
+    });
+
     $('div.section').children('div.news_item').click(function(){
         console.log( "Go to the news details page" );
         window.location.href = window.location.href.replace('hot_topic.html', 'news_details.html');

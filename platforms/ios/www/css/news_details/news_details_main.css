@@ -62,9 +62,24 @@ div#main div.content div.subscribe_window{
     overflow-y: hidden;
     overflow-x: scroll;
 }
+div#main div.content img#right_more{
+    position: absolute;
+    display: block;
+    z-index: 10;
+    width: 12px;
+    height: 22px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    margin-left: 0;
+    margin-right: 0;
+    right: 20px;
+    left: 688px;
+    top: 0;
+}
 div#main div.content div.subscribe_window div.subscribe_area{
     position: relative;
     display: block;
+    /*top: 0;*/
     height: 80px;
     width: 1080px;
     font-size: 0;
@@ -184,28 +199,26 @@ div#main div.content div.news_infor div.news_reliability{
     height: 30px;
     background: transparent;
     margin: 0;
+    margin-left: 25px;
+    overflow: hidden;
 }
-div#main div.content div.news_infor div.news_reliability span:first-child{
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 24px;
-    margin-right: 5px;
-    margin-left: 0;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    color: black;
+div#main div.content div.news_infor div.news_reliability img{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    top: 0;
+    left: 0;
 }
-div#main div.content div.news_infor div.news_reliability span:last-child{
+div#main div.content div.news_infor div.news_reliability span{
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 24px;
-    color: #ff9e00;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    margin: 5px 0;
 }
 div#main div.content div.news_infor div.news_time{
     position: absolute;

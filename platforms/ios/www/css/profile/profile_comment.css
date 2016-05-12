@@ -1,0 +1,162 @@
+body{
+    position: fixed;
+    display: block;
+    overflow: scroll;
+    top: 0;
+}
+div#top_bar{
+    position: fixed;
+    display: block;
+    width: 720px;
+    height: 100px;
+    margin: 0;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    border-bottom: 2px solid #e5e5e5;
+    text-align: center;
+}
+div#top_bar h1{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: black;
+    margin: 35px auto;
+}
+div#top_bar div#top_back_button{
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 20px;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+}
+div#top_bar div#top_back_button img{
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 20px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* The css layout for the content section */
+div#main{
+    position: fixed;
+    display: block;
+    width: 720px;
+    height: 1130px;
+    top: 150px;
+    left: 0;
+    margin: 0;
+    overflow-y: scroll;
+    background-color: white;
+}
+div#main div.comment_item{
+    position: relative;
+    display: block;
+    width: 680px;
+    margin: 0 20px;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: white;
+    font-size: 0;
+}
+div#main div.comment_item div.left{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    width: 72px;
+}
+div#main div.comment_item div.left div.avatar{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    -moz-border-radius: 72px;
+    -webkit-border-radius: 72px;
+}
+div#main div.comment_item div.left div.avatar img{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    margin: 0;
+}
+div#main div.comment_item div.right{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 588px;
+}
+div#main div.comment_item div.right span.user_name{
+    position: relative;
+    display: block;
+    font-size: 28px;
+    width: 588px;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #8a8a8a;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+div#main div.comment_item div.right span.time_stamp{
+    position: relative;
+    display: block;
+    color: #8a8a8a;
+    font-size: 20px;
+    width: 588px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+div#main div.comment_item div.right p{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
+    width: 588px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+div#main div.comment_item div.right div.original{
+    position: relative;
+    display: block;
+    width: 588px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 35px;
+}
+div#main div.comment_item div.right div.original span{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #8a8a8a;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: left;
+}
