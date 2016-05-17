@@ -2,62 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2134027-43a3-446e-86f3-89cca32f3c72" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/profile/bottom_home_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/profile/bottom_search_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/profile/bottom_topic_icon.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova.xcodeproj/project.pbxproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Bridging-Header.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Classes/AppDelegate.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Classes/AppDelegate.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Classes/MainViewController.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Classes/MainViewController.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Classes/MainViewController.xib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/HelloCordova-Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/HelloCordova-Prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-50@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-60@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-60@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-72@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-83.5@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-small@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon-small@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/AppIcon.appiconset/icon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Contents.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-568h@2x~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-667h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-736h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-Landscape-736h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-Landscape@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-Landscape~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-Portrait@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default-Portrait~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default@2x~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Images.xcassets/LaunchImage.launchimage/Default~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/Plugins/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/HelloCordova/main.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/discussion_room/show_map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/homepage/bottom_home_active_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/homepage/bottom_home_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/homepage/bottom_profile_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/homepage/bottom_search_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/homepage/bottom_topic_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_home_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_loading_active_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_profile_active_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_search_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_topic_icon.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_home_active_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_home_active_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_profile_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_profile_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_search_active_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_search_active_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/hot_topic/bottom_topic_active_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_topic_active_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/profile/bottom_home_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_home_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/profile/bottom_profile_active_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_profile_active_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/profile/bottom_search_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_search_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/profile/bottom_topic_icon.png" afterPath="$PROJECT_DIR$/www/img/common/bottom_topic_icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/discussion_room.html" afterPath="$PROJECT_DIR$/platforms/browser/www/discussion_room.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/discussion_room/discussion_room_main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/discussion_room/discussion_room_main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/discussion_room.html" afterPath="$PROJECT_DIR$/platforms/ios/www/discussion_room.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/discussion_room/discussion_room_main.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/discussion_room/discussion_room_main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/profile/profile_main.css" afterPath="$PROJECT_DIR$/www/css/profile/profile_main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/profile/profile_main.js" afterPath="$PROJECT_DIR$/www/js/profile/profile_main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/hot_topic.html" afterPath="$PROJECT_DIR$/www/hot_topic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/www/js/homepage/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/profile.html" afterPath="$PROJECT_DIR$/www/profile.html" />
     </list>
     <ignored path="xinhuasheproject.iws" />
@@ -79,41 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile_main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/profile/profile_main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile_main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/profile/profile_main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="148">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -151,7 +87,6 @@
         <option value="$PROJECT_DIR$/www/js/search_results/search_results_main.js" />
         <option value="$PROJECT_DIR$/www/js/search/search_main.js" />
         <option value="$PROJECT_DIR$/www/js/subscribe/subscribe_main.js" />
-        <option value="$PROJECT_DIR$/www/hot_topic.html" />
         <option value="$PROJECT_DIR$/www/search.html" />
         <option value="$PROJECT_DIR$/www/search_results.html" />
         <option value="$PROJECT_DIR$/www/subscribe.html" />
@@ -160,8 +95,6 @@
         <option value="$PROJECT_DIR$/www/js/news_details/news_details_main.js" />
         <option value="$PROJECT_DIR$/www/news_details.html" />
         <option value="$PROJECT_DIR$/www/css/news_details/news_details_main.css" />
-        <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/homepage/index.js" />
         <option value="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" />
         <option value="$PROJECT_DIR$/www/profile_favourite.html" />
         <option value="$PROJECT_DIR$/www/js/profile/profile_favourite.js" />
@@ -177,6 +110,9 @@
         <option value="$PROJECT_DIR$/www/css/profile/profile_main.css" />
         <option value="$PROJECT_DIR$/www/js/profile/profile_main.js" />
         <option value="$PROJECT_DIR$/www/profile.html" />
+        <option value="$PROJECT_DIR$/www/hot_topic.html" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/homepage/index.js" />
       </list>
     </option>
   </component>
@@ -389,29 +325,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="profile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xinhuasheproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xinhuasheproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homepage" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -558,11 +472,11 @@
       <recent name="$PROJECT_DIR$/www/img/discussion_room" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/img/common" />
       <recent name="$PROJECT_DIR$/www/img/profile/index" />
       <recent name="$PROJECT_DIR$/www/js/common" />
       <recent name="$PROJECT_DIR$/www/js/homepage" />
       <recent name="$PROJECT_DIR$/www/css/homepage" />
-      <recent name="$PROJECT_DIR$/www/css/common" />
     </key>
   </component>
   <component name="RunManager">
@@ -667,12 +581,12 @@
       <workItem from="1463251844878" duration="2586000" />
       <workItem from="1463493595818" duration="690000" />
       <workItem from="1463505885018" duration="1133000" />
-      <workItem from="1463513090134" duration="1307000" />
+      <workItem from="1463513090134" duration="1864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139953000" />
+    <option name="totallyTimeSpent" value="140510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
@@ -681,6 +595,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21388888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31878307" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.49722221" order="7" side_tool="false" content_ui="tabs" />
@@ -691,7 +606,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -712,11 +626,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/img/hot_topic/arrow_right_gray.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/img/search_results/result_picture.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -901,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/hot_topic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1111">
-          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/search_results/search_results_main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -991,26 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="160" column="12" selection-start-line="160" selection-start-column="12" selection-end-line="177" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/profile/profile_main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="121" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1031,10 +917,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/common/bottom_loading_active_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/hot_topic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="174" column="83" selection-start-line="174" selection-start-column="83" selection-end-line="174" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        <state relative-caret-position="148">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
           <folding />
         </state>
       </provider>
