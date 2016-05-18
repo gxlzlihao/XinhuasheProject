@@ -4,6 +4,11 @@
 
 $(document).ready(function(){
 
+    $('img#top_back_button').click(function(){
+        console.log("lihao");
+        window.history.go(-1);
+    });
+
     $('div.section#opinions').children('div.content').children('div.item').each(function(){
         var percentage_value = $(this).children('div.percentage_area').children('span').text();
         $(this).children('div.percentage_area').children('div').css({ 'width':percentage_value });

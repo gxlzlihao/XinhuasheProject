@@ -97,15 +97,6 @@ $(document).ready(function(){
         }
     });
 
-    $('div.bottom_tab_item#bottom_homepage_item').mousedown(function(){
-        $(this).children('img').attr('src','img/homepage/bottom_home_active_icon.png');
-        $(this).children('span').css({'color':'#1788ed'});
-    });
-    $('div.bottom_tab_item#bottom_homepage_item').mouseup(function(){
-        $(this).children('img').attr('src','img/homepage/bottom_home_icon.png');
-        $(this).children('span').css({'color':'#666666'});
-    });
-
     $('div.bottom_tab_item#bottom_topic_item').click(function(){
         console.log( "Go to the hot topics page" );
         window.location.href = window.location.href.replace('index.html', 'hot_topic.html');
