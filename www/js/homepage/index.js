@@ -63,6 +63,16 @@ $(document).ready(function(){
     //     alert("Error create database::err=" + err);
     // });
 
+    // var _data = server_communication.homepage_news_list( 1, 0, 4 );
+    // console.log( _data );
+    //
+    // var _result = JSON.parse( _data ).result;
+    // if ( _result == false || _result == null ) {
+    //     alert( "Failed to get data from the remote server!" );
+    // } else {
+    //     // update the homepage
+    // }
+
     var navigation_item_number = $('div.navigation_bar').children('div.navigation_window').children('div.navigation_area').children('div.navigation_item').length;
     $('div.navigation_area').css({'width':( navigation_item_number * 105 ) +'px'});
 

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.xinhuashe" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>XinhuasheProject</name>
+    <name>Xinhuashe</name>
     <description>
         A sample Apache Cordova application for the Xinhuashe project.
     </description>
@@ -9,6 +9,8 @@
     </author>
     <!-- To setup the homepage of the cordova project -->
     <content src="index.html" />
+
+    <icon src="www/img/logo.png" />
 
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
@@ -19,9 +21,11 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
+        <icon src="www/img/logo.png" />
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
+        <icon src="www/img/logo.png" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
