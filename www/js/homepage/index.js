@@ -63,7 +63,6 @@ $(document).ready(function(){
     //     alert("Error create database::err=" + err);
     // });
 
-
     var navigation_item_number = $('div.navigation_bar').children('div.navigation_window').children('div.navigation_area').children('div.navigation_item').length;
     $('div.navigation_area').css({'width':( navigation_item_number * 105 ) +'px'});
 
@@ -120,16 +119,4 @@ $(document).ready(function(){
     $('div.news_item').click(function(){
         window.location.href = window.location.href.replace('index', 'news_details');
     });
-
-    // $('div.content_window').scroll(function(){
-    //     // var _value = $(this).children('div:first-child').scrollTop();
-    //     var _value = $(this).scrollTop();
-    //     console.log( "test: " + _value );
-    //
-    //     if ( _value > $(this).children('div:first-child').height() ) {
-    //         $(this).children('div:first-child').remove();
-    //         console.log( "remove the first list item" );
-    //         $(this).children('div:last-child').clone().appendTo(this);
-    //     }
-    // });
 });
