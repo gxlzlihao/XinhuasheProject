@@ -2,84 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2134027-43a3-446e-86f3-89cca32f3c72" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe.xcodeproj/project.xcworkspace/xcuserdata/gxlzlihao.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-50@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-60@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-60@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-72@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-83.5@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-small@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon-small@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/icon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/www/img/logo_old.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/img/logo_old.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/browser/www/js/common/server_communication.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platforms/ios/www/js/common/server_communication.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/common/server_communication.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject.xcodeproj/project.xcworkspace/xcuserdata/gxlzlihao.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject.xcodeproj/xcuserdata/gxlzlihao.xcuserdatad/xcschemes/XinhuasheProject.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject.xcodeproj/xcuserdata/gxlzlihao.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-40@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-50@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-60@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-60@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-72@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-83.5@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-small@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon-small@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/icon@2x.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe.xcodeproj/project.pbxproj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/.gitignore" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Bridging-Header.h" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Bridging-Header.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Classes/AppDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Classes/AppDelegate.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Classes/AppDelegate.m" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Classes/AppDelegate.m" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Classes/MainViewController.h" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Classes/MainViewController.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Classes/MainViewController.m" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Classes/MainViewController.m" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Classes/MainViewController.xib" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Classes/MainViewController.xib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/AppIcon.appiconset/Contents.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Contents.json" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Contents.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-568h@2x~iphone.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-568h@2x~iphone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-667h.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-667h.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-736h.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-736h.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-Landscape-736h.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-Landscape-736h.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-Landscape@2x~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-Landscape~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-Landscape~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-Portrait@2x~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default-Portrait~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default@2x~iphone.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default@2x~iphone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Images.xcassets/LaunchImage.launchimage/Default~iphone.png" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Images.xcassets/LaunchImage.launchimage/Default~iphone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/Plugins/README" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Plugins/README" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/XinhuasheProject-Info.plist" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Xinhuashe-Info.plist" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/XinhuasheProject-Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/Xinhuashe-Prefix.pch" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/config.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/platforms/ios/XinhuasheProject/main.m" afterPath="$PROJECT_DIR$/platforms/ios/Xinhuashe/main.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/common/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/build/package.zip" afterPath="$PROJECT_DIR$/platforms/browser/build/package.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/img/logo.png" afterPath="$PROJECT_DIR$/platforms/ios/www/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/logo.png" afterPath="$PROJECT_DIR$/www/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/img/logo.png" afterPath="$PROJECT_DIR$/platforms/browser/www/img/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/css/homepage/index.css" afterPath="$PROJECT_DIR$/platforms/browser/www/css/homepage/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" afterPath="$PROJECT_DIR$/platforms/browser/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/common/server_communication.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/common/server_communication.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/homepage/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/platforms/ios/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/common/server_communication.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/common/server_communication.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/homepage/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/homepage/index.css" afterPath="$PROJECT_DIR$/www/css/homepage/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/common/server_communication.js" afterPath="$PROJECT_DIR$/www/js/common/server_communication.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/www/js/homepage/index.js" />
     </list>
     <ignored path="xinhuasheproject.iws" />
@@ -101,22 +39,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="702">
+              <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/css/homepage/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="73" selection-end-column="8" />
+            <state relative-caret-position="381">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/common/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +84,8 @@
       <file leaf-file-name="server_communication.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="501">
+              <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
@@ -165,7 +125,6 @@
         <option value="$PROJECT_DIR$/www/css/index.css" />
         <option value="$PROJECT_DIR$/www/css/common/common.css" />
         <option value="$PROJECT_DIR$/www/css/common/reset.css" />
-        <option value="$PROJECT_DIR$/www/css/homepage/index.css" />
         <option value="$PROJECT_DIR$/www/css/search/search_main.css" />
         <option value="$PROJECT_DIR$/www/css/hot_topic/hot_topic_main.css" />
         <option value="$PROJECT_DIR$/www/css/topic_details/topic_details_main.css" />
@@ -199,10 +158,12 @@
         <option value="$PROJECT_DIR$/www/subscribe.html" />
         <option value="$PROJECT_DIR$/www/topic_details.html" />
         <option value="$PROJECT_DIR$/www/js/common/viewport_adjust.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/common/server_communication.js" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/js/common/server_communication.js" />
+        <option value="$PROJECT_DIR$/www/css/homepage/index.css" />
+        <option value="$PROJECT_DIR$/www/js/common/common.js" />
         <option value="$PROJECT_DIR$/www/js/homepage/index.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -272,6 +233,68 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news_details" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -658,12 +681,12 @@
       <workItem from="1463540111654" duration="2660000" />
       <workItem from="1465868537799" duration="666000" />
       <workItem from="1466132260384" duration="3592000" />
-      <workItem from="1466141319205" duration="3141000" />
+      <workItem from="1466141319205" duration="9586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152229000" />
+    <option name="totallyTimeSpent" value="158674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
@@ -673,18 +696,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31878307" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.49722221" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -703,14 +726,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/test.html" />
-    <entry file="file://$PROJECT_DIR$/plugins/ios.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/profile/profile_main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
@@ -754,13 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/homepage/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3073">
-          <caret line="230" column="14" selection-start-line="230" selection-start-column="14" selection-end-line="230" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/discussion_room.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -772,13 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/news_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -835,24 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,10 +986,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/news_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/news_details/news_details_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/common/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/homepage/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="73" selection-end-column="8" />
+        <state relative-caret-position="381">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="75" column="55" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
           <folding />
         </state>
       </provider>

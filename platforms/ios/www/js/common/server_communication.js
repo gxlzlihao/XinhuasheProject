@@ -38,10 +38,9 @@ var server_communication = {
         $.ajax({
             type: 'GET',
             url: _url ,
-            success: function( _obj ){
+            async: false,
+            complete: function( obj ){
 
-                // console.log( _obj );
-                alert( obj );
                 _res = obj.responseText;
 
             } ,

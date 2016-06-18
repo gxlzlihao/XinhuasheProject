@@ -63,15 +63,80 @@ $(document).ready(function(){
     //     alert("Error create database::err=" + err);
     // });
 
-    var _data = server_communication.homepage_news_list( 1, 0, 4 );
-    console.log( _data );
+    var _current_start_index = 0;
+    var _current_count_index = 4;
+    var _current_subscribe_id = 1;
 
-    var _result = JSON.parse( _data ).result;
-    if ( _result == false || _result == null ) {
-        alert( "Failed to get data from the remote server!" );
-    } else {
-        // update the homepage
-    }
+    var _ori_data = server_communication.homepage_news_list( _current_subscribe_id, _current_start_index, _current_count_index );
+
+    var process_homepage_data = function( _d ){
+        var _result = $.parseJSON( _d )[0].result;
+        var _data = $.parseJSON( _d )[0].data;
+        if ( _result == false || _result == null ) {
+            alert( "Failed to get data from the remote server!" );
+        } else {
+            for ( var i = 0; i < _data.length; ++i ) {
+                var _item = _data[i];
+                if ( _current_start_index == 0 && i == 0 ) {
+                    // insert the head news
+                    var _id = _item.id;
+                    var _title = _item.title;
+                    var _image_url = "http://114.215.82.131:8888/Time" + _item.image_url;
+                    var _headline = $("<div class='headline_item'>" +
+                        "<image src=" + _image_url + " alt=" + _image_url + "></image>" +
+                        "<span>" + _title + "</span>" +
+                        "</div>");
+                    _headline.appendTo( $('div.content_window') );
+                    _headline.click( function(){
+                        window.location.href = window.location.href.replace( 'index', 'news_details?id=' + _id );
+                    } );
+                } else {
+                    // insert one news item
+                    var _id = _item.id;
+                    var _title = _item.title;
+                    var _brief_description = _item.brief_description;
+
+                    if ( _brief_description.length > 40 ) {
+                        _brief_description = _brief_description.substring( 0, 40 );
+                        _brief_description = _brief_description + "...";
+                    }
+
+                    var _number_comments = _item.number_comments;
+                    var _time_stamp = _item.time_stamp;
+                    var _image_url = "http://114.215.82.131:8888/Time" + _item.image_url;
+                    var _ago = timeAgo( _time_stamp );
+
+                    var _news_item = $("<div class='news_item'>" +
+                        "<span class='news_id'>" + _id + "</span>" +
+                        "<image src=" + _image_url + " alt=" + _image_url + "></image>" +
+                        "<div class='news_content'>" +
+                        "<span class='news_title'>" + _title + "</span>" +
+                        "<p class='news_brief_description'>" + _brief_description + "</p>" +
+                        "<div class='news_infor'>" +
+                        "<span class='news_comemnt_count'>" + _number_comments + "条评论</span>" +
+                        "<span class='news_time_ago'>" + _ago + "前</span>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>");
+                    _news_item.appendTo( $('div.content_window') );
+                    _news_item.click( function(){
+                        window.location.href = window.location.href.replace( 'index', 'news_details?id=' + _id );
+                    } );
+                }
+            }
+        }
+    };
+
+    $('div.content_window').scroll(function(){
+        if ( this.scrollTop + this.clientHeight >= this.scrollHeight ) {
+            console.log( "scroll content window to the bottom, update the news list." );
+            _current_start_index = _current_start_index + _current_count_index;
+            var _ori_data = server_communication.homepage_news_list( _current_subscribe_id, _current_start_index, _current_count_index );
+            process_homepage_data( _ori_data );
+        }
+    });
+
+    process_homepage_data( _ori_data );
 
     var navigation_item_number = $('div.navigation_bar').children('div.navigation_window').children('div.navigation_area').children('div.navigation_item').length;
     $('div.navigation_area').css({'width':( navigation_item_number * 105 ) +'px'});
@@ -126,7 +191,4 @@ $(document).ready(function(){
         window.location.href = window.location.href.replace('index.html', 'subscribe.html');
     });
 
-    $('div.news_item').click(function(){
-        window.location.href = window.location.href.replace('index', 'news_details');
-    });
 });
