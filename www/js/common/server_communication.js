@@ -2,64 +2,43 @@
  * Created by gxlzlihao on 16/6/17.
  */
 
-// var app = {
-//     // Application Constructor
-//     initialize: function() {
-//         this.bindEvents();
-//     },
-//     // Bind Event Listeners
-//     //
-//     // Bind any events that are required on startup. Common events are:
-//     // 'load', 'deviceready', 'offline', and 'online'.
-//     bindEvents: function() {
-//         document.addEventListener('deviceready', this.onDeviceReady, false);
-//     },
-//     // deviceready Event Handler
-//     //
-//     // The scope of 'this' is the event. In order to call the 'receivedEvent'
-//     // function, we must explicitly call 'app.receivedEvent(...);'
-//     onDeviceReady: function() {
-//         app.receivedEvent('deviceready');
-//     },
-//     // Update DOM on a Received Event
-//     receivedEvent: function(id) {
-//
-//         console.log('Received Event: ' + id);
-//
-//     }
-// };
-//
-// app.initialize();
-
 var server_communication = {
 
-    do_get: function( _url, _data ){
-        var _res = null;
+    get_server_url_prefix: function() {
+        var _rs = "http://114.215.82.131:8888/Time/services/";
+        return _rs;
+    },
+
+    get_image_url_prefix: function() {
+        var _rs = "http://114.215.82.131:8888/Time";
+        return _rs;
+    },
+
+    do_get: function( _url, _data, _call_back ){
+
         $.ajax({
             type: 'GET',
             url: _url ,
             async: false,
             complete: function( obj ){
 
-                _res = obj.responseText;
+                _call_back( obj.responseText );
 
             } ,
             dataType: 'json'
         });
-        return _res;
+
     },
 
-    homepage_news_list: function( _topic_id, _start, _count ){
-        var _url = "http://114.215.82.131:8888/Time/services/homepage/{" + _topic_id + "}?start=" + _start + "&count=" + _count;
+    homepage_news_list: function( _topic_id, _start, _count, _call_back ){
+        var _url = server_communication.get_server_url_prefix() + "homepage/{" + _topic_id + "}?start=" + _start + "&count=" + _count;
         console.log( _url );
-        var _res = server_communication.do_get( _url, null );
-        return _res;
+        server_communication.do_get( _url, null, _call_back );
     },
 
     topic_list: function( _start, _count ){
-        var _url = "http://114.215.82.131:8888/Time/services/topic/?start=" + _start + "&count=" + _count;
+        var _url = server_communication.get_server_url_prefix() + "topic/?start=" + _start + "&count=" + _count;
         console.log( _url );
-        var _res = server_communication.do_get( _url, null );
-        return _res;
+        server_communication.do_get( _url, null, _call_back );
     }
 };
