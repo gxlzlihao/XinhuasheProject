@@ -68,6 +68,7 @@ $(document).ready(function(){
     var _current_subscribe_id = 1;
 
     var process_homepage_data = function( _d ){
+
         var _result = $.parseJSON( _d )[0].result;
         var _data = $.parseJSON( _d )[0].data;
         if ( _result == false || _result == null ) {
@@ -123,6 +124,7 @@ $(document).ready(function(){
                 }
             }
         }
+        
     };
 
     server_communication.homepage_news_list( _current_subscribe_id, _current_start_index, _current_count_index, process_homepage_data );
