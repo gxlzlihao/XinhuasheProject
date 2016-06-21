@@ -76,12 +76,14 @@ $(document).ready(function(){
 
                 _new_section.children('div.title').children('img').click(function(){
                     console.log( "Go to the topic details page" );
-                    window.location.href = window.location.href.replace('hot_topic.html', 'topic_details.html');
+                    var _topic_id = $(this).siblings('h5.topic_id').text();
+                    window.location.href = window.location.href.replace('hot_topic.html', 'topic_details.html?topic_id=' + _topic_id);
                 });
 
                 _new_section.children('div.banner').click(function(){
                     console.log( "Go to the topic details page" );
-                    window.location.href = window.location.href.replace('hot_topic.html', 'topic_details.html');
+                    var _topic_id = $(this).prev().children();
+                    window.location.href = window.location.href.replace('hot_topic.html', 'topic_details.html?topic_id=' + _topic_id);
                 });
 
                 _new_section.children('div.news_item').click(function(){

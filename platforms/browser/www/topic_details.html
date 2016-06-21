@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=0.575, maximum-scale=0.575, minimum-scale=0.575, width=device-width">
@@ -16,6 +15,8 @@
     <script type="text/javascript" src="js/common/jquery/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="js/common/jquery/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="js/common/viewport_adjust.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/common/server_communication.js"></script>
     <script type="text/javascript" src="js/topic_details/topic_details_main.js"></script>
 
     <title>Topic Details</title>
@@ -28,7 +29,7 @@
         <div id="top_background_cover"></div>
         <image id="top_back_button" src="img/topic_details/arrow_left_white.png" alt="img/topic_details/arrow_left_white.png"></image>
         <image id="top_share_button" src="img/topic_details/share_white.png" alt="img/topic_details/share_white.png"></image>
-        <h1>两会</h1>
+        <h1 id="topic_title">两会</h1>
         <div>
             <div id="discussion_room">
                 <span>研讨厅</span>
@@ -40,108 +41,7 @@
         </div>
     </div>
     <div id="main">
-        <div class="news_item">
-            <div class="left">
-                <image src="img/topic_details/news_image1.png" alt="img/topic_details/news_image1.png"></image>
-            </div>
-            <div class="right">
-                <h1>李克强评论"职工到手5000元"</h1>
-                <p>关于该条新闻的简短评论,以及描述.</p>
-                <div class="news_item_info">
-                    <div class="reliability">
-                        <image src="img/topic_details/credit_orange.png" alt="img/topic_details/credit_orange.png"></image>
-                        <span>疑</span>
-                    </div>
-                    <span class="news_item_source">新华社</span>
-                    <span class="news_item_comment_count">1014次评论</span>
-                </div>
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="left">
-                <image src="img/topic_details/news_image1.png" alt="img/topic_details/news_image1.png"></image>
-            </div>
-            <div class="right">
-                <h1>李克强评论"职工到手5000元"</h1>
-                <p>关于该条新闻的简短评论,以及描述.</p>
-                <div class="news_item_info">
-                    <div class="reliability">
-                        <image src="img/topic_details/credit_orange.png" alt="img/topic_details/credit_orange.png"></image>
-                        <span>疑</span>
-                    </div>
-                    <span class="news_item_source">新华社</span>
-                    <span class="news_item_comment_count">1014次评论</span>
-                </div>
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="left">
-                <image src="img/topic_details/news_image1.png" alt="img/topic_details/news_image1.png"></image>
-            </div>
-            <div class="right">
-                <h1>李克强评论"职工到手5000元"</h1>
-                <p>关于该条新闻的简短评论,以及描述.</p>
-                <div class="news_item_info">
-                    <div class="reliability">
-                        <image src="img/topic_details/credit_orange.png" alt="img/topic_details/credit_orange.png"></image>
-                        <span>疑</span>
-                    </div>
-                    <span class="news_item_source">新华社</span>
-                    <span class="news_item_comment_count">1014次评论</span>
-                </div>
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="left">
-                <image src="img/topic_details/news_image1.png" alt="img/topic_details/news_image1.png"></image>
-            </div>
-            <div class="right">
-                <h1>李克强评论"职工到手5000元"</h1>
-                <p>关于该条新闻的简短评论,以及描述.</p>
-                <div class="news_item_info">
-                    <div class="reliability">
-                        <image src="img/topic_details/credit_orange.png" alt="img/topic_details/credit_orange.png"></image>
-                        <span>疑</span>
-                    </div>
-                    <span class="news_item_source">新华社</span>
-                    <span class="news_item_comment_count">1014次评论</span>
-                </div>
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="left">
-                <image src="img/topic_details/news_image1.png" alt="img/topic_details/news_image1.png"></image>
-            </div>
-            <div class="right">
-                <h1>李克强评论"职工到手5000元"</h1>
-                <p>关于该条新闻的简短评论,以及描述.</p>
-                <div class="news_item_info">
-                    <div class="reliability">
-                        <image src="img/topic_details/credit_orange.png" alt="img/topic_details/credit_orange.png"></image>
-                        <span>疑</span>
-                    </div>
-                    <span class="news_item_source">新华社</span>
-                    <span class="news_item_comment_count">1014次评论</span>
-                </div>
-            </div>
-        </div>
-        <div class="news_item">
-            <div class="left">
-                <image src="img/topic_details/news_image1.png" alt="img/topic_details/news_image1.png"></image>
-            </div>
-            <div class="right">
-                <h1>李克强评论"职工到手5000元"</h1>
-                <p>关于该条新闻的简短评论,以及描述.</p>
-                <div class="news_item_info">
-                    <div class="reliability">
-                        <image src="img/topic_details/credit_orange.png" alt="img/topic_details/credit_orange.png"></image>
-                        <span>疑</span>
-                    </div>
-                    <span class="news_item_source">新华社</span>
-                    <span class="news_item_comment_count">1014次评论</span>
-                </div>
-            </div>
-        </div>
+        <!-- The new content would be inserted here -->
     </div>
 </div>
 

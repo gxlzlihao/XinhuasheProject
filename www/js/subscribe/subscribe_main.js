@@ -32,4 +32,16 @@ $(document).ready(function(){
     $('div#search_bar').children('button').click(function(){
         $('div#search_results').css({'display':'block'});
     });
+
+    var process_subscribe_recommendation = function( _d ) {
+        var _result = $.parseJSON( _d )[0].result;
+        var _data = $.parseJSON( _d )[0].data;
+        if ( _result == false || _result == null ) {
+            alert( "Failed to get data from the remote server!" );
+        } else {
+            //
+        }
+    }
+
+    server_communication.subscribe_recommendation( process_subscribe_recommendation );
 });
