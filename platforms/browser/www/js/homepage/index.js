@@ -119,7 +119,7 @@ $(document).ready(function(){
                         "</div>");
                     _news_item.appendTo( $('div.content_window') );
                     _news_item.click( function(){
-                        window.location.href = window.location.href.replace( 'index', 'news_details?id=' + _id );
+                        window.location.href = window.location.href.replace( 'index.html', 'news_details.html?news_id=' + _id + "&type=column" );
                     } );
                 }
             }

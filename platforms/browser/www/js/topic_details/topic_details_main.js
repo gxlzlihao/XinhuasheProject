@@ -22,15 +22,15 @@ $(document).ready(function(){
             var _news = _data.news;
 
             $('h1#topic_title').text( _title );
-            $('img#top_background').attr( 'src', _banner_image_url );
-            $('img#top_background').attr( 'alt', _banner_image_url );
+            $('img#top_background').attr( 'src', server_communication.get_image_url_prefix() + _banner_image_url );
+            $('img#top_background').attr( 'alt', server_communication.get_image_url_prefix() + _banner_image_url );
 
             for ( var j = 0; j < _news.length; ++j ) {
 
                 var _item = _news[j];
                 var _image_url = server_communication.get_image_url_prefix() + _item.image_url;
 
-                var _new_item = "<div class='news_item'>" +
+                var _new_item = $("<div class='news_item'>" +
                     "<div class='left'>" +
                     "   <image src=" + _image_url + " alt=" + _image_url + "></image>" +
                     "</div>" +
@@ -46,13 +46,21 @@ $(document).ready(function(){
                     "        <span class='news_item_source'>" + _item.source + "</span>" +
                     "        <span class='news_item_comment_count'>" + _item.comment_count + "次评论</span>" +
                     "    </div>" +
-                    "</div></div>";
+                    "</div></div>");
                 _new_item.appendTo( $('div#main') );
             }
         }
     };
 
     server_communication.topic_details( _topic_id, _current_start_index, _current_count_index, process_topic_details );
+
+    $('div#wrapper').scroll(function(){
+        if ( this.scrollTop + this.clientHeight >= this.scrollHeight ) {
+            console.log( "scroll div#wrapper to the bottom, update the news list." );
+            _current_start_index = _current_start_index + _current_count_index;
+            server_communication.topic_details( _topic_id, _current_start_index, _current_count_index, process_topic_details );
+        }
+    });
 
     $('img#top_back_button').click(function(){
         window.history.go(-1);

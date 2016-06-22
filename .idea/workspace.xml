@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2134027-43a3-446e-86f3-89cca32f3c72" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/hot_topic/hot_topic_main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/hot_topic/hot_topic_main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/common/common.js" afterPath="$PROJECT_DIR$/www/js/common/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/common/server_communication.js" afterPath="$PROJECT_DIR$/www/js/common/server_communication.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/www/js/homepage/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" afterPath="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/subscribe/subscribe_main.js" afterPath="$PROJECT_DIR$/www/js/subscribe/subscribe_main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/topic_details/topic_details_main.js" afterPath="$PROJECT_DIR$/www/js/topic_details/topic_details_main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/subscribe.html" afterPath="$PROJECT_DIR$/www/subscribe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/topic_details.html" afterPath="$PROJECT_DIR$/www/topic_details.html" />
     </list>
     <ignored path="xinhuasheproject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,19 +31,36 @@
       <file leaf-file-name="subscribe.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/subscribe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+            <state relative-caret-position="345">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subscribe_main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="subscribe_main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/subscribe/subscribe_main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="84" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
-              <folding />
+            <state relative-caret-position="143">
+              <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+              <folding>
+                <marker date="1466568351000" expanded="true" signature="1545:1557" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hot_topic_main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
+              <folding>
+                <marker date="1466566572000" expanded="true" signature="1457:1469" placeholder="..." />
+                <marker date="1466566572000" expanded="true" signature="2632:3859" placeholder="..." />
+                <marker date="1466566572000" expanded="true" signature="2687:2945" placeholder="..." />
+                <marker date="1466566572000" expanded="true" signature="2756:2768" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,12 +68,44 @@
       <file leaf-file-name="topic_details_main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/topic_details/topic_details_main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="248">
+              <caret line="54" column="151" selection-start-line="54" selection-start-column="151" selection-end-line="54" selection-end-column="151" />
               <folding>
-                <marker date="1466524783000" expanded="true" signature="1114:2140" placeholder="..." />
-                <marker date="1466524783000" expanded="true" signature="1321:2134" placeholder="..." />
-                <marker date="1466524783000" expanded="true" signature="1378:1390" placeholder="..." />
+                <marker date="1466568973000" expanded="true" signature="1208:2234" placeholder="..." />
+                <marker date="1466568973000" expanded="true" signature="1415:2228" placeholder="..." />
+                <marker date="1466568973000" expanded="true" signature="1472:1484" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news_details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/news_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-532">
+              <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server_communication.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="69" column="102" selection-start-line="69" selection-start-column="102" selection-end-line="69" selection-end-column="102" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,7 +137,6 @@
         <option value="$PROJECT_DIR$/www/css/hot_topic/hot_topic_main.css" />
         <option value="$PROJECT_DIR$/www/css/topic_details/topic_details_main.css" />
         <option value="$PROJECT_DIR$/www/css/search_results/search_results_main.css" />
-        <option value="$PROJECT_DIR$/www/css/subscribe/subscribe_main.css" />
         <option value="$PROJECT_DIR$/www/js/search_results/search_results_main.js" />
         <option value="$PROJECT_DIR$/www/js/search/search_main.js" />
         <option value="$PROJECT_DIR$/www/css/discussion_room/discussion_room_main.css" />
@@ -117,15 +162,16 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/css/homepage/index.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/homepage/index.js" />
         <option value="$PROJECT_DIR$/www/hot_topic.html" />
-        <option value="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" />
         <option value="$PROJECT_DIR$/www/js/common/common.js" />
         <option value="$PROJECT_DIR$/www/topic_details.html" />
-        <option value="$PROJECT_DIR$/www/js/topic_details/topic_details_main.js" />
-        <option value="$PROJECT_DIR$/www/js/common/server_communication.js" />
+        <option value="$PROJECT_DIR$/www/js/homepage/index.js" />
+        <option value="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" />
+        <option value="$PROJECT_DIR$/www/css/subscribe/subscribe_main.css" />
         <option value="$PROJECT_DIR$/www/subscribe.html" />
         <option value="$PROJECT_DIR$/www/js/subscribe/subscribe_main.js" />
+        <option value="$PROJECT_DIR$/www/js/topic_details/topic_details_main.js" />
+        <option value="$PROJECT_DIR$/www/js/common/server_communication.js" />
       </list>
     </option>
   </component>
@@ -321,6 +367,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="homepage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -358,6 +426,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subscribe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -682,12 +772,12 @@
       <workItem from="1466141319205" duration="10156000" />
       <workItem from="1466225766746" duration="7029000" />
       <workItem from="1466423566794" duration="740000" />
-      <workItem from="1466487202659" duration="5128000" />
+      <workItem from="1466487202659" duration="9673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172141000" />
+    <option name="totallyTimeSpent" value="176686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -727,13 +817,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/js/search/search_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/discussion_room/discussion_room_main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -856,13 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/news_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/news_details/news_details_main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -886,41 +962,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="137" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/hot_topic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/common/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="98" column="4" selection-start-line="98" selection-start-column="4" selection-end-line="104" selection-end-column="7" />
-          <folding>
-            <marker date="1466521712000" expanded="true" signature="1457:1469" placeholder="..." />
-            <marker date="1466521712000" expanded="true" signature="2632:3855" placeholder="..." />
-            <marker date="1466521712000" expanded="true" signature="2687:2941" placeholder="..." />
-            <marker date="1466521712000" expanded="true" signature="2752:2764" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -933,40 +980,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
+    <entry file="file://$PROJECT_DIR$/www/hot_topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+        <state relative-caret-position="458">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/subscribe/subscribe_main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/subscribe/subscribe_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
           <folding>
-            <element signature="e#0#43#0" expanded="false" />
+            <marker date="1466568351000" expanded="true" signature="1545:1557" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/subscribe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
+          <folding>
+            <marker date="1466566572000" expanded="true" signature="1457:1469" placeholder="..." />
+            <marker date="1466566572000" expanded="true" signature="2632:3859" placeholder="..." />
+            <marker date="1466566572000" expanded="true" signature="2687:2945" placeholder="..." />
+            <marker date="1466566572000" expanded="true" signature="2756:2768" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/topic_details/topic_details_main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="248">
+          <caret line="54" column="151" selection-start-line="54" selection-start-column="151" selection-end-line="54" selection-end-column="151" />
           <folding>
-            <marker date="1466524783000" expanded="true" signature="1114:2140" placeholder="..." />
-            <marker date="1466524783000" expanded="true" signature="1321:2134" placeholder="..." />
-            <marker date="1466524783000" expanded="true" signature="1378:1390" placeholder="..." />
+            <marker date="1466568973000" expanded="true" signature="1208:2234" placeholder="..." />
+            <marker date="1466568973000" expanded="true" signature="1415:2228" placeholder="..." />
+            <marker date="1466568973000" expanded="true" signature="1472:1484" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/subscribe/subscribe_main.js">
+    <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="84" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
+        <state relative-caret-position="578">
+          <caret line="69" column="102" selection-start-line="69" selection-start-column="102" selection-end-line="69" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/news_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-532">
+          <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
           <folding />
         </state>
       </provider>

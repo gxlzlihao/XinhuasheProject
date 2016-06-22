@@ -53,7 +53,7 @@ $(document).ready(function(){
 
                         _new_section = _new_section + "<div class='news_item'>" +
                                 "<div class='left'>" +
-                                "<h5 class='news_id' style='display:none'>" + _news_id + "</h5>" +
+                                "    <h5 class='news_id' style='display:none'>" + _news_id + "</h5>" +
                                 "    <image src=" + _news_image_url + " alt=" + _news_image_url + "></image>" +
                                 "</div>" +
                                 "<div class='right'>" +
@@ -82,13 +82,14 @@ $(document).ready(function(){
 
                 _new_section.children('div.banner').click(function(){
                     console.log( "Go to the topic details page" );
-                    var _topic_id = $(this).prev().children();
+                    var _topic_id = $(this).prev().children('h5.topic_id').text();
                     window.location.href = window.location.href.replace('hot_topic.html', 'topic_details.html?topic_id=' + _topic_id);
                 });
 
                 _new_section.children('div.news_item').click(function(){
                     console.log( "Go to the news details page" );
-                    window.location.href = window.location.href.replace('hot_topic.html', 'news_details.html');
+                    var _news_id = $(this).children('div.left').children('h5.news_id').text();
+                    window.location.href = window.location.href.replace('hot_topic.html', 'news_details.html?news_id=' + _news_id + "&type=hotTopic");
                 });
             }
         }
