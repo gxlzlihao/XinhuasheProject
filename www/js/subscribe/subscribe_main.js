@@ -3,6 +3,19 @@
  */
 
 $(document).ready(function(){
+
+    var _local_subscribe_topics = JSON.parse( window.localStorage.getItem('local_subscribe_topics') );
+
+    for ( var i = 0; i < _local_subscribe_topics.length; ++i ) {
+        var _topic = _local_subscribe_topics[i];
+        var _new_topic = $("<div class='subscribe_item'>" +
+                "<span class='subscribe_item_id'>" + _topic.id + "</span>" +
+                "<span class='subscribe_item_title'>" + _topic.name + "</span>" +
+                "<image src='img/subscribe/delete.png' alt='img/subscribe/delete.png'></image>" +
+            "</div>");
+        _new_topic.appendTo( $( 'div#current_subscribe' ) );
+    }
+
     $('div#exit').click(function(){
         window.history.go(-1);
     });

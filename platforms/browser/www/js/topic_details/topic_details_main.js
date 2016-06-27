@@ -3,7 +3,7 @@
  */
 $(document).ready(function(){
 
-    var _topic_id = getUrlParam( "topic_id" );
+    var _topic_id = common.getUrlParam( "topic_id" );
 
     var _current_start_index = 0;
     var _current_count_index = 5;
@@ -48,6 +48,12 @@ $(document).ready(function(){
                     "    </div>" +
                     "</div></div>");
                 _new_item.appendTo( $('div#main') );
+
+                _new_item.click(function(){
+                    console.log( "Go to the news details page" );
+                    var _news_id = _item.id;
+                    window.location.href = window.location.href.replace('topic_details.html', 'news_details.html?news_id=' + _news_id + "&type=hotTopic" );
+                });
             }
         }
     };
@@ -64,11 +70,6 @@ $(document).ready(function(){
 
     $('img#top_back_button').click(function(){
         window.history.go(-1);
-    });
-
-    $('div#main').children('div.news_item').click(function(){
-        console.log( "Go to the news details page" );
-        window.location.href = window.location.href.replace('topic_details.html', 'news_details.html');
     });
 
     $('div#discussion_room').click(function(){

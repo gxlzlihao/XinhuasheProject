@@ -148,7 +148,7 @@ div#main div.content div.subscribe_window div.subscribe_area div.subscribe_item 
     font-size: 20px;
     color: #9d9d9d;
 }
-div#main div.content span.news_title{
+div#main div.content span#news_title{
     position: relative;
     display: block;
     font-size: 45px;

@@ -3,7 +3,7 @@
  */
 $(document).ready(function(){
 
-    var _topic_id = getUrlParam( "topic_id" );
+    var _topic_id = common.getUrlParam( "topic_id" );
 
     var _current_start_index = 0;
     var _current_count_index = 5;

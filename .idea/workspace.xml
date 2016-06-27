@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2134027-43a3-446e-86f3-89cca32f3c72" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/common/server_communication.js" afterPath="$PROJECT_DIR$/www/js/common/server_communication.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/css/news_details/news_details_main.css" afterPath="$PROJECT_DIR$/platforms/browser/www/css/news_details/news_details_main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" afterPath="$PROJECT_DIR$/platforms/browser/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/common/server_communication.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/common/server_communication.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/homepage/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/news_details/news_details_main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/news_details/news_details_main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/topic_details/topic_details_main.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/topic_details/topic_details_main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/news_details.html" afterPath="$PROJECT_DIR$/platforms/browser/www/news_details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/news_details/news_details_main.css" afterPath="$PROJECT_DIR$/www/css/news_details/news_details_main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/common/common.js" afterPath="$PROJECT_DIR$/www/js/common/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/www/js/homepage/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" afterPath="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/news_details/news_details_main.js" afterPath="$PROJECT_DIR$/www/js/news_details/news_details_main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/subscribe/subscribe_main.js" afterPath="$PROJECT_DIR$/www/js/subscribe/subscribe_main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/topic_details/topic_details_main.js" afterPath="$PROJECT_DIR$/www/js/topic_details/topic_details_main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/news_details.html" afterPath="$PROJECT_DIR$/www/news_details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/subscribe.html" afterPath="$PROJECT_DIR$/www/subscribe.html" />
     </list>
     <ignored path="xinhuasheproject.iws" />
@@ -31,8 +42,8 @@
       <file leaf-file-name="subscribe.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/subscribe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="74">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -41,49 +52,20 @@
       <file leaf-file-name="subscribe_main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/subscribe/subscribe_main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+            <state relative-caret-position="135">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
               <folding>
-                <marker date="1466568351000" expanded="true" signature="1545:1557" placeholder="..." />
+                <marker date="1467017047000" expanded="true" signature="2172:2184" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hot_topic_main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
-              <folding>
-                <marker date="1466566572000" expanded="true" signature="1457:1469" placeholder="..." />
-                <marker date="1466566572000" expanded="true" signature="2632:3859" placeholder="..." />
-                <marker date="1466566572000" expanded="true" signature="2687:2945" placeholder="..." />
-                <marker date="1466566572000" expanded="true" signature="2756:2768" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topic_details_main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/topic_details/topic_details_main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="54" column="151" selection-start-line="54" selection-start-column="151" selection-end-line="54" selection-end-column="151" />
-              <folding>
-                <marker date="1466568973000" expanded="true" signature="1208:2234" placeholder="..." />
-                <marker date="1466568973000" expanded="true" signature="1415:2228" placeholder="..." />
-                <marker date="1466568973000" expanded="true" signature="1472:1484" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news_details.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/news_details.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+            <state relative-caret-position="263">
+              <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -92,8 +74,18 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
+            <state relative-caret-position="360">
+              <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/common/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -102,8 +94,8 @@
       <file leaf-file-name="server_communication.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="69" column="102" selection-start-line="69" selection-start-column="102" selection-end-line="69" selection-end-column="102" />
+            <state relative-caret-position="300">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
@@ -140,8 +132,6 @@
         <option value="$PROJECT_DIR$/www/js/search_results/search_results_main.js" />
         <option value="$PROJECT_DIR$/www/js/search/search_main.js" />
         <option value="$PROJECT_DIR$/www/css/discussion_room/discussion_room_main.css" />
-        <option value="$PROJECT_DIR$/www/js/news_details/news_details_main.js" />
-        <option value="$PROJECT_DIR$/www/css/news_details/news_details_main.css" />
         <option value="$PROJECT_DIR$/www/js/profile/profile_favourite.js" />
         <option value="$PROJECT_DIR$/www/css/profile/profile_favourite.css" />
         <option value="$PROJECT_DIR$/www/js/profile/profile_comment.js" />
@@ -152,7 +142,6 @@
         <option value="$PROJECT_DIR$/www/js/profile/profile_main.js" />
         <option value="$PROJECT_DIR$/www/js/discussion_room/discussion_room_main.js" />
         <option value="$PROJECT_DIR$/www/discussion_room.html" />
-        <option value="$PROJECT_DIR$/www/news_details.html" />
         <option value="$PROJECT_DIR$/www/profile.html" />
         <option value="$PROJECT_DIR$/www/profile_comment.html" />
         <option value="$PROJECT_DIR$/www/profile_favourite.html" />
@@ -161,17 +150,20 @@
         <option value="$PROJECT_DIR$/www/js/common/viewport_adjust.js" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/css/homepage/index.css" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/hot_topic.html" />
-        <option value="$PROJECT_DIR$/www/js/common/common.js" />
         <option value="$PROJECT_DIR$/www/topic_details.html" />
-        <option value="$PROJECT_DIR$/www/js/homepage/index.js" />
         <option value="$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js" />
         <option value="$PROJECT_DIR$/www/css/subscribe/subscribe_main.css" />
+        <option value="$PROJECT_DIR$/www/css/news_details/news_details_main.css" />
+        <option value="$PROJECT_DIR$/www/news_details.html" />
+        <option value="$PROJECT_DIR$/www/js/common/server_communication.js" />
         <option value="$PROJECT_DIR$/www/subscribe.html" />
         <option value="$PROJECT_DIR$/www/js/subscribe/subscribe_main.js" />
+        <option value="$PROJECT_DIR$/www/js/common/common.js" />
+        <option value="$PROJECT_DIR$/www/js/news_details/news_details_main.js" />
         <option value="$PROJECT_DIR$/www/js/topic_details/topic_details_main.js" />
-        <option value="$PROJECT_DIR$/www/js/common/server_communication.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/homepage/index.js" />
       </list>
     </option>
   </component>
@@ -183,7 +175,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -210,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -491,6 +482,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="news_details" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="homepage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -632,6 +645,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -772,15 +786,17 @@
       <workItem from="1466141319205" duration="10156000" />
       <workItem from="1466225766746" duration="7029000" />
       <workItem from="1466423566794" duration="740000" />
-      <workItem from="1466487202659" duration="9673000" />
+      <workItem from="1466487202659" duration="12038000" />
+      <workItem from="1466661176700" duration="597000" />
+      <workItem from="1466945118323" duration="6499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176686000" />
+    <option name="totallyTimeSpent" value="186147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21388888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -817,13 +833,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/js/discussion_room/discussion_room_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/profile/profile_comment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -939,36 +948,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/news_details/news_details_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/homepage/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
           <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/common/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,32 +973,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/subscribe/subscribe_main.js">
+    <entry file="file://$PROJECT_DIR$/www/css/news_details/news_details_main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
-          <folding>
-            <marker date="1466568351000" expanded="true" signature="1545:1557" placeholder="..." />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/subscribe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="74">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/common/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/news_details/news_details_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/news_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/hot_topic/hot_topic_main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
+        <state relative-caret-position="260">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="31" />
           <folding>
             <marker date="1466566572000" expanded="true" signature="1457:1469" placeholder="..." />
             <marker date="1466566572000" expanded="true" signature="2632:3859" placeholder="..." />
@@ -1027,40 +1039,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/subscribe/subscribe_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <marker date="1467017047000" expanded="true" signature="2172:2184" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/topic_details/topic_details_main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="54" column="151" selection-start-line="54" selection-start-column="151" selection-end-line="54" selection-end-column="151" />
+        <state relative-caret-position="260">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <marker date="1466568973000" expanded="true" signature="1208:2234" placeholder="..." />
-            <marker date="1466568973000" expanded="true" signature="1415:2228" placeholder="..." />
-            <marker date="1466568973000" expanded="true" signature="1472:1484" placeholder="..." />
+            <marker date="1467018210000" expanded="true" signature="1215:2241" placeholder="..." />
+            <marker date="1467018210000" expanded="true" signature="1422:2235" placeholder="..." />
+            <marker date="1467018210000" expanded="true" signature="1479:1491" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="69" column="102" selection-start-line="69" selection-start-column="102" selection-end-line="69" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/news_details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        <state relative-caret-position="263">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
+        <state relative-caret-position="360">
+          <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
           <folding />
         </state>
       </provider>

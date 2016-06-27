@@ -63,9 +63,31 @@ $(document).ready(function(){
     //     alert("Error create database::err=" + err);
     // });
 
+    var _subscribe_topics = new Array();
+    if ( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) == null ) {
+        // TODO: 从本地SQL数据库中读取当前订阅的新闻栏目,并保存到window.localStorage之中,如果SQL数据库中没有数据,则插入默认数据
+        // TODO: 以下代码为临时代码,可以在插入SQL数据库操作代码后删除
+
+        _subscribe_topics.push( JSON.parse( "{'id':'6', 'name':'财经'}" ) );
+        _subscribe_topics.push( JSON.parse( "{'id':'7', 'name':'国际'}" ) );
+        _subscribe_topics.push( JSON.parse( "{'id':'8', 'name':'时政'}" ) );
+        _subscribe_topics.push( JSON.parse( "{'id':'9', 'name':'体育'}" ) );
+        _subscribe_topics.push( JSON.parse( "{'id':'10', 'name':'文化'}" ) );
+
+        window.localStorage.setItem( common.getLocalSubscribeTopicTag(), JSON.stringify( _subscribe_topics ) );
+    } else {
+        _subscribe_topics = JSON.parse( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) );
+    }
+
+    for ( var i = 0; i < _subscribe_topics.length; ++i ) {
+        var _topic = $("<div class='navigation_item'><span class='subscribe_topic_id'>" + _subscribe_topics[i].id + "</span><span>" + _subscribe_topics[i].name + "</span></div>");
+        _topic.appendTo( $('div.navigation_area') );
+    }
+    $('div.navigation_item').first().addClass('active');
+
     var _current_start_index = 0;
     var _current_count_index = 4;
-    var _current_subscribe_id = 1;
+    var _current_subscribe_id = $('div.navigation_item.active').children('span.subscribe_topic_id').text();
 
     var process_homepage_data = function( _d ){
 
@@ -87,7 +109,7 @@ $(document).ready(function(){
                         "</div>");
                     _headline.appendTo( $('div.content_window') );
                     _headline.click( function(){
-                        window.location.href = window.location.href.replace( 'index', 'news_details?id=' + _id );
+                        window.location.href = window.location.href.replace( 'index.html', 'news_details.html?news_id=' + _id + "&type=column" );
                     } );
                 } else {
                     // insert one news item
@@ -103,7 +125,7 @@ $(document).ready(function(){
                     var _number_comments = _item.number_comments;
                     var _time_stamp = _item.time_stamp;
                     var _image_url = server_communication.get_image_url_prefix() + _item.image_url;
-                    var _ago = timeAgo( _time_stamp );
+                    var _ago = common.timeAgo( _time_stamp );
 
                     var _news_item = $("<div class='news_item'>" +
                         "<span class='news_id'>" + _id + "</span>" +
@@ -147,6 +169,12 @@ $(document).ready(function(){
                 $(this).removeClass('active');
             });
             $(this).addClass('active');
+
+            _current_subscribe_id = $(this).children('span.subscribe_topic_id').text();
+            $('div.content_window').empty();
+            _current_start_index = 0;
+            _current_count_index = 4;
+            server_communication.homepage_news_list( _current_subscribe_id, _current_start_index, _current_count_index, process_homepage_data );
         });
     });
     

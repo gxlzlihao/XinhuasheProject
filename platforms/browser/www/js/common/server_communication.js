@@ -64,5 +64,11 @@ var server_communication = {
         var _url = server_communication.get_server_url_prefix() + "news/{" + _news_id + "}?type=" + _news_type;
         console.log( _url );
         server_communication.do_get( _url, null, _call_back );
+    },
+
+    news_comments: function( _news_id, _start, _count, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "comments/query?news_id=" + _news_id + "&start=" + _start + "&count=" + _count;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
     }
 };
