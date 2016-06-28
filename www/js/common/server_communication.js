@@ -16,8 +16,20 @@ var server_communication = {
 
     do_get: function( _url, _data, _call_back ){
 
+        server_communication.do_async_communication( "GET", _url, _data, _call_back );
+
+    },
+
+    do_post: function( _url, _data, _call_back ) {
+
+        server_communication.do_async_communication( "POST", _url, _data, _call_back );
+
+    },
+
+    do_async_communication: function( _type, _url, _data, _call_back ) {
+
         $.ajax({
-            type: 'GET',
+            type: _type,
             url: _url ,
             async: true,
             complete: function( obj ){
@@ -68,6 +80,12 @@ var server_communication = {
 
     news_comments: function( _news_id, _start, _count, _call_back ) {
         var _url = server_communication.get_server_url_prefix() + "comments/query?news_id=" + _news_id + "&start=" + _start + "&count=" + _count;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
+    },
+
+    discussion_room: function( _topic_id, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "topic/discussion?id=" + _topic_id;
         console.log( _url );
         server_communication.do_get( _url, null, _call_back );
     }

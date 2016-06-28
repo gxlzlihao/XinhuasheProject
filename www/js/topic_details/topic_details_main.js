@@ -5,6 +5,8 @@ $(document).ready(function(){
 
     var _topic_id = common.getUrlParam( "topic_id" );
 
+    console.log( "printing topic id: " + _topic_id );
+
     var _current_start_index = 0;
     var _current_count_index = 5;
 
@@ -74,7 +76,7 @@ $(document).ready(function(){
 
     $('div#discussion_room').click(function(){
         console.log( "Go to the discussion room page" );
-        window.location.href = window.location.href.replace('topic_details.html', 'discussion_room.html');
+        window.location.href = window.location.href.replace( 'topic_details.html', 'discussion_room.html' );
     });
 
 });

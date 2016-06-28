@@ -14,7 +14,9 @@
     <!-- The javascript library -->
     <script type="text/javascript" src="js/common/jquery/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
     <script type="text/javascript" src="js/common/viewport_adjust.js"></script>
+    <script type="text/javascript" src="js/common/server_communication.js"></script>
     <script type="text/javascript" src="js/discussion_room/discussion_room_main.js"></script>
 
     <title>Topic Discussion</title>
@@ -46,14 +48,10 @@
             <h1>大事记</h1>
         </div>
         <div class="content">
-            <div class="item">
-                <span class="time_stamp">4月3日</span>
-                <span class="title">温家宝访问清华大学.</span>
-            </div>
-            <div class="item">
-                <span class="time_stamp">8月11日</span>
-                <span class="title">习近平和李克强出席奥运会开幕式.</span>
-            </div>
+            <!--<div class="item">-->
+                <!--<span class="time_stamp">4月3日</span>-->
+                <!--<span class="title">温家宝访问清华大学.</span>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="section" id="analysis">
@@ -64,28 +62,17 @@
             <h1>解读</h1>
         </div>
         <div class="content">
-            <div class="item">
-                <span class="item_title">两会后,这两天热烈讨论的热点有哪些?</span>
-                <p>两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济.</p>
-                <div class="item_info">
-                    <div class="reliability">
-                        <image src="img/discussion_room/credit_green.png" alt="img/discussion_room/credit_green.png"></image>
-                        <span>信</span>
-                    </div>
-                    <span class="item_source">新华社</span>
-                </div>
-            </div>
-            <div class="item">
-                <span class="item_title">两会后,这两天热烈讨论的热点有哪些?</span>
-                <p>两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济.</p>
-                <div class="item_info">
-                    <div class="reliability">
-                        <image src="img/discussion_room/credit_green.png" alt="img/discussion_room/credit_green.png"></image>
-                        <span>信</span>
-                    </div>
-                    <span class="item_source">新华社</span>
-                </div>
-            </div>
+            <!--<div class="item">-->
+                <!--<span class="item_title">两会后,这两天热烈讨论的热点有哪些?</span>-->
+                <!--<p>两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济,两会,医疗,健康,教育,经济.</p>-->
+                <!--<div class="item_info">-->
+                    <!--<div class="reliability">-->
+                        <!--<image src="img/discussion_room/credit_green.png" alt="img/discussion_room/credit_green.png"></image>-->
+                        <!--<span>信</span>-->
+                    <!--</div>-->
+                    <!--<span class="item_source">新华社</span>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="section" id="opinions">
@@ -96,27 +83,13 @@
             <h1>众说</h1>
         </div>
         <div class="content">
-            <div class="item">
-                <span class="opinion_title">观点一</span>
-                <div class="percentage_area">
-                    <span>50%</span>
-                    <div></div>
-                </div>
-            </div>
-            <div class="item">
-                <span class="opinion_title">观点二</span>
-                <div class="percentage_area">
-                    <span>30%</span>
-                    <div></div>
-                </div>
-            </div>
-            <div class="item">
-                <span class="opinion_title">观点三</span>
-                <div class="percentage_area">
-                    <span>20%</span>
-                    <div></div>
-                </div>
-            </div>
+            <!--<div class="item">-->
+                <!--<span class="opinion_title">观点一</span>-->
+                <!--<div class="percentage_area">-->
+                    <!--<span>50%</span>-->
+                    <!--<div></div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
     <!--  the map section location -->
@@ -128,41 +101,13 @@
             <h1>影响力人物</h1>
         </div>
         <div class="content">
-            <div class="item">
-                <span class="person_name">人物一</span>
-                <div class="number_area">
-                    <span>2809</span>
-                    <div></div>
-                </div>
-            </div>
-            <div class="item">
-                <span class="person_name">人物二</span>
-                <div class="number_area">
-                    <span>1900</span>
-                    <div></div>
-                </div>
-            </div>
-            <div class="item">
-                <span class="person_name">人物三</span>
-                <div class="number_area">
-                    <span>302</span>
-                    <div></div>
-                </div>
-            </div>
-            <div class="item">
-                <span class="person_name">人物四</span>
-                <div class="number_area">
-                    <span>12</span>
-                    <div></div>
-                </div>
-            </div>
-            <div class="item">
-                <span class="person_name">人物五</span>
-                <div class="number_area">
-                    <span>11</span>
-                    <div></div>
-                </div>
-            </div>
+            <!--<div class="item">-->
+                <!--<span class="person_name">人物一</span>-->
+                <!--<div class="number_area">-->
+                    <!--<span>2809</span>-->
+                    <!--<div></div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
     <div class="section" id="trend">
@@ -249,7 +194,6 @@
                             }
                         ]
                     };
-
                     myChart.setOption(option);
                     window.onresize = myChart.resize;  //自适应屏幕大小
                 }

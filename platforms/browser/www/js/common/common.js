@@ -21,9 +21,9 @@ var common = {
     },
 
     timeAgo : function (dateStr) {
-        var _hours_ago = hoursAgo(dateStr);
-        var _days_ago = daysAgo(dateStr);
-        var _months_ago = monthsAgo(dateStr);
+        var _hours_ago = common.hoursAgo(dateStr);
+        var _days_ago = common.daysAgo(dateStr);
+        var _months_ago = common.monthsAgo(dateStr);
         if (_hours_ago > 24) {
             if (_days_ago > 30) {
                 _res = _months_ago + "月";
