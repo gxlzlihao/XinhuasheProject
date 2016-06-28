@@ -1,8 +1,11 @@
 /**
  * Created by gxlzlihao on 16/5/5.
  */
+mapChart = null;
+mapOption = null;
 
-var _test = "lihao";
+lineChart = null;
+lineOption = null;
 
 $(document).ready(function(){
 
@@ -62,7 +65,90 @@ $(document).ready(function(){
             var _analysis = _data.analysis;
             var _people = _data.people.sort(sortPeople);
 
-            _test = "ddd";
+            if ( mapChart != null ) {
+                mapChart.hideLoading();
+                mapOption = {
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    dataRange: {
+                        min: _map.min,
+                        max: _map.max,
+                        x: 'left',
+                        y: 'bottom',
+                        text: ['高', '低'],           // 文本，默认为数值文本
+                        calculable: true
+                    },
+                    toolbox: {
+                        show: true,
+                        orient: 'vertical',
+                        x: 'right',
+                        y: 'center',
+                        feature: {
+                            mark: {show: true},
+                            dataView: {show: true, readOnly: false},
+                            restore: {show: true},
+                            saveAsImage: {show: true}
+                        }
+                    },
+                    series: [
+                        {
+                            name: 'influenceMap',
+                            type: 'map',
+                            mapType: 'china',
+                            itemStyle: {
+                                normal: {label: {show: true}},
+                                emphasis: {label: {show: true}}
+                            },
+                            data: _map.data
+                        }
+                    ]
+                };
+                mapChart.setOption( mapOption );
+                window.onresize = mapChart.resize;  //自适应屏幕大小
+            }
+
+            if ( lineChart != null ) {
+                var _x_data = new Array();
+                var _y_data = new Array();
+                for ( var w = 0; w < _trend.data.length; ++w ) {
+                    _x_data.push( _trend.data[w].time );
+                    _y_data.push( _trend.data[w].value );
+                }
+
+                lineChart.hideLoading();
+                lineOption = {
+                    legend: {                                   // 图例配置
+                        padding: 5,                             // 图例内边距，单位px，默认上下左右内边距为5
+                        itemGap: 10,                            // Legend各个item之间的间隔，横向布局时为水平间隔，纵向布局时为纵向间隔
+                        data: ['influenceTrend']
+                    },
+                    tooltip: {                                  // 气泡提示配置
+                        trigger: 'item',                        // 触发类型，默认数据触发，可选为：'axis'
+                    },
+                    xAxis: [                                    // 直角坐标系中横轴数组
+                        {
+                            type: 'category',                   // 坐标轴类型，横轴默认为类目轴，数值轴则参考yAxis说明
+                            data: _x_data
+                        }
+                    ],
+                    yAxis: [                                    // 直角坐标系中纵轴数组
+                        {
+                            type: 'value',                      // 坐标轴类型，纵轴默认为数值轴，类目轴则参考xAxis说明
+                            boundaryGap: [0.1, 0.1],            // 坐标轴两端空白策略，数组内数值代表百分比
+                            splitNumber: 4                      // 数值轴用，分割段数，默认为5
+                        }
+                    ],
+                    series: [
+                        {
+                            name: 'influenceTrend',                        // 系列名称
+                            type: 'line',                       // 图表类型，折线图line、散点图scatter、柱状图bar、饼图pie、雷达图radar
+                            data: _y_data
+                        }
+                    ]
+                };
+                lineChart.setOption( lineOption );
+            }
 
             for ( var q = 0; q < _events.length ; ++q ) {
                 var _ev = _events[q];

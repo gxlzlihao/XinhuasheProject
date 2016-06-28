@@ -16,6 +16,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/common/common.js"></script>
     <script type="text/javascript" src="js/common/viewport_adjust.js"></script>
+    <script type="text/javascript" src="js/common/echarts/echarts.js"></script>
     <script type="text/javascript" src="js/common/server_communication.js"></script>
     <script type="text/javascript" src="js/discussion_room/discussion_room_main.js"></script>
 
@@ -28,6 +29,7 @@
     <h1>研讨厅</h1>
 </div>
 <div id="main">
+
     <div class="section" id="influence_map">
         <div class="title">
             <div class="head_icon">
@@ -118,11 +120,11 @@
             <h1>趋势</h1>
         </div>
         <div class="content">
+            <div id="line" style="display:block;width:720px;height:560px"></div>
         </div>
     </div>
 </div>
 
-<script src="js/common/echarts/echarts.js"></script>
 <script type="text/javascript">
     $(function() {
         require.config({
@@ -133,69 +135,21 @@
         require(
                 [
                     'echarts',
-                    'echarts/chart/map'
+                    'echarts/chart/map',
+                    'echarts/chart/line'
                 ],
                 function (ec) {
-                    var myChart = ec.init(document.getElementById('map'));
-                    option = {
-                        tooltip: {
-                            trigger: 'item'
-                        },
-                        dataRange: {
-                            min: 0,
-                            max: 2500,
-                            x: 'left',
-                            y: 'bottom',
-                            text: ['高', '低'],           // 文本，默认为数值文本
-                            calculable: true
-                        },
-                        toolbox: {
-                            show: true,
-                            orient: 'vertical',
-                            x: 'right',
-                            y: 'center',
-                            feature: {
-                                mark: {show: true},
-                                dataView: {show: true, readOnly: false},
-                                restore: {show: true},
-                                saveAsImage: {show: true}
-                            }
-                        },
-                        series: [
-                            {
-                                name: 'iphone4',
-                                type: 'map',
-                                mapType: 'china',
-                                itemStyle: {
-                                    normal: {label: {show: true}},
-                                    emphasis: {label: {show: true}}
-                                },
-                                data: [
-                                    {name: '北京', value: Math.round(Math.random() * 1000)},
-                                    {name: '天津', value: Math.round(Math.random() * 1000)},
-                                    {name: '上海', value: Math.round(Math.random() * 1000)},
-                                    {name: '重庆', value: Math.round(Math.random() * 1000)},
-                                    {name: '河北', value: Math.round(Math.random() * 1000)},
-                                    {name: '安徽', value: Math.round(Math.random() * 1000)},
-                                    {name: '新疆', value: Math.round(Math.random() * 1000)},
-                                    {name: '浙江', value: Math.round(Math.random() * 1000)},
-                                    {name: '江西', value: Math.round(Math.random() * 1000)},
-                                    {name: '山西', value: Math.round(Math.random() * 1000)},
-                                    {name: '内蒙古', value: Math.round(Math.random() * 1000)},
-                                    {name: '吉林', value: Math.round(Math.random() * 1000)},
-                                    {name: '福建', value: Math.round(Math.random() * 1000)},
-                                    {name: '广东', value: Math.round(Math.random() * 1000)},
-                                    {name: '西藏', value: Math.round(Math.random() * 1000)},
-                                    {name: '四川', value: Math.round(Math.random() * 1000)},
-                                    {name: '宁夏', value: Math.round(Math.random() * 1000)},
-                                    {name: '香港', value: Math.round(Math.random() * 1000)},
-                                    {name: '澳门', value: Math.round(Math.random() * 1000)}
-                                ]
-                            }
-                        ]
-                    };
-                    myChart.setOption(option);
-                    window.onresize = myChart.resize;  //自适应屏幕大小
+                    // to initialize the map chart
+                    mapChart = ec.init(document.getElementById('map'));
+                    mapChart.showLoading({
+                        text: '正在努力的读取数据中...',    //loading话术
+                    });
+
+                    // to initialize the line chart
+                    lineChart = ec.init(document.getElementById('line'));
+                    lineChart.showLoading({
+                        text: '正在努力的读取数据中...',    //loading话术
+                    });
                 }
         );
     });
