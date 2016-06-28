@@ -31,6 +31,7 @@ var server_communication = {
         $.ajax({
             type: _type,
             url: _url ,
+            data: _data,
             async: true,
             complete: function( obj ){
 
@@ -60,10 +61,10 @@ var server_communication = {
         server_communication.do_get( _url, null, _call_back );
     },
 
-    subscribe_recommendation: function( _call_back ) {
+    subscribe_recommendation: function( _data, _call_back ) {
         var _url = server_communication.get_server_url_prefix() + "subscribe/recommendation";
         console.log( _url );
-        server_communication.do_get( _url, null, _call_back );
+        server_communication.do_post( _url, _data, _call_back );
     },
 
     subscribe_query: function( _key_word, _call_back ) {

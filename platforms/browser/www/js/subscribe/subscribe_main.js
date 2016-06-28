@@ -129,5 +129,13 @@ $(document).ready(function(){
         }
     }
 
-    server_communication.subscribe_recommendation( process_subscribe_recommendation );
+    var _rec_data = new Object();
+    _rec_data.count = 5;
+    _rec_data.exceptions = new Array();
+    var _array = JSON.parse( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) );
+    for ( var j = 0; j < _array.length; ++j ) {
+        _rec_data.exceptions.push( _array[j].id );
+    }
+
+    server_communication.subscribe_recommendation( _rec_data, process_subscribe_recommendation );
 });
