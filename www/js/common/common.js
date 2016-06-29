@@ -45,5 +45,9 @@ var common = {
 
     getLocalSubscribeTopicTag : function () {
         return "local_subscribe_topics";
+    },
+
+    getSearchHistoryTag : function () {
+        return "search_history";
     }
 }

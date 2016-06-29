@@ -33,20 +33,19 @@ var app = {
         db.executeSql("DROP TABLE IF EXISTS tt");
         db.executeSql("CREATE TABLE tt (data)");
         db.transaction(function(tx) {
-            alert("lihao");
-            $.ajax({
-                url: 'https://api.github.com/users/litehelpers/repos',
-                dataType: 'json',
-                success: function(res) {
-                    console.log('Got AJAX response: ' + JSON.stringify(res));
-                    $.each(res, function(i, item) {
-                        console.log('REPO NAME: ' + item.name);
-                        tx.executeSql("INSERT INTO tt values (?)", JSON.stringify(item.name));
-                    });
-                }
-            });
+            // $.ajax({
+            //     url: 'https://api.github.com/users/litehelpers/repos',
+            //     dataType: 'json',
+            //     success: function(res) {
+            //         console.log('Got AJAX response: ' + JSON.stringify(res));
+            //         $.each(res, function(i, item) {
+            //             console.log('REPO NAME: ' + item.name);
+            //             tx.executeSql("INSERT INTO tt values (?)", JSON.stringify(item.name));
+            //         });
+            //     }
+            // });
         }, function(e) {
-            alert('Transaction error: ' + e.message);
+            console.log('Transaction error: ' + e.message);
         }, function() {
             // Check results:
             db.executeSql('SELECT COUNT(*) FROM tt', [], function(res) {

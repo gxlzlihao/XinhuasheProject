@@ -89,5 +89,11 @@ var server_communication = {
         var _url = server_communication.get_server_url_prefix() + "topic/discussion?id=" + _topic_id;
         console.log( _url );
         server_communication.do_get( _url, null, _call_back );
+    },
+
+    search_hints: function( _key_word, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "news/query?type=similar&key=" + _key_word;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
     }
 };
