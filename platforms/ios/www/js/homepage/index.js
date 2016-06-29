@@ -33,7 +33,7 @@ var app = {
         db.executeSql("DROP TABLE IF EXISTS tt");
         db.executeSql("CREATE TABLE tt (data)");
         db.transaction(function(tx) {
-
+            alert("lihao");
             $.ajax({
                 url: 'https://api.github.com/users/litehelpers/repos',
                 dataType: 'json',
@@ -42,7 +42,6 @@ var app = {
                     $.each(res, function(i, item) {
                         console.log('REPO NAME: ' + item.name);
                         tx.executeSql("INSERT INTO tt values (?)", JSON.stringify(item.name));
-                        alert("lihao");
                     });
                 }
             });

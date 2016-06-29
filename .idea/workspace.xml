@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2134027-43a3-446e-86f3-89cca32f3c72" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/angular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/dist/ng-cordova-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/dist/ng-cordova-mocks.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/dist/ng-cordova.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/dist/ng-cordova.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/bower_components/ngCordova/package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/build/package.zip" afterPath="$PROJECT_DIR$/platforms/browser/build/package.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" afterPath="$PROJECT_DIR$/platforms/browser/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/platforms/browser/www/js/homepage/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/platforms/ios/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/homepage/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/browser.json" afterPath="$PROJECT_DIR$/plugins/browser.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ios.json" afterPath="$PROJECT_DIR$/plugins/ios.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/homepage/index.js" afterPath="$PROJECT_DIR$/www/js/homepage/index.js" />
     </list>
     <ignored path="xinhuasheproject.iws" />
@@ -51,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server_communication.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server_communication.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/common/server_communication.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-113">
@@ -73,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="405">
+              <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -416,6 +391,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngCordova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xinhuasheproject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngCordova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -784,12 +823,12 @@
       <workItem from="1466661176700" duration="597000" />
       <workItem from="1466945118323" duration="20540000" />
       <workItem from="1467187492637" duration="75000" />
-      <workItem from="1467189976253" duration="1804000" />
+      <workItem from="1467189976253" duration="2439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202067000" />
+    <option name="totallyTimeSpent" value="202702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
@@ -829,13 +868,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/profile_comment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1031,14 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/subscribe/subscribe_main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="607">
@@ -1056,6 +1080,24 @@
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/common/bower_components/ngCordova/dist/ng-cordova.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/homepage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
