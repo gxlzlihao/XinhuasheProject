@@ -3,7 +3,6 @@ module.exports = [];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.applicationcraft.plugins.PGSQLitePlugin": "2.0.0",
     "cordova-plugin-whitelist": "1.2.2"
 }
 // BOTTOM OF METADATA

@@ -2,64 +2,92 @@
  * Created by gxlzlihao on 16/6/17.
  */
 
-// var app = {
-//     // Application Constructor
-//     initialize: function() {
-//         this.bindEvents();
-//     },
-//     // Bind Event Listeners
-//     //
-//     // Bind any events that are required on startup. Common events are:
-//     // 'load', 'deviceready', 'offline', and 'online'.
-//     bindEvents: function() {
-//         document.addEventListener('deviceready', this.onDeviceReady, false);
-//     },
-//     // deviceready Event Handler
-//     //
-//     // The scope of 'this' is the event. In order to call the 'receivedEvent'
-//     // function, we must explicitly call 'app.receivedEvent(...);'
-//     onDeviceReady: function() {
-//         app.receivedEvent('deviceready');
-//     },
-//     // Update DOM on a Received Event
-//     receivedEvent: function(id) {
-//
-//         console.log('Received Event: ' + id);
-//
-//     }
-// };
-//
-// app.initialize();
-
 var server_communication = {
 
-    do_get: function( _url, _data ){
-        var _res = null;
+    get_server_url_prefix: function() {
+        var _rs = "http://114.215.82.131:8888/Time/services/";
+        return _rs;
+    },
+
+    get_image_url_prefix: function() {
+        var _rs = "http://114.215.82.131:8888/Time";
+        return _rs;
+    },
+
+    do_get: function( _url, _data, _call_back ){
+
+        server_communication.do_async_communication( "GET", _url, _data, _call_back );
+
+    },
+
+    do_post: function( _url, _data, _call_back ) {
+
+        server_communication.do_async_communication( "POST", _url, _data, _call_back );
+
+    },
+
+    do_async_communication: function( _type, _url, _data, _call_back ) {
+
         $.ajax({
-            type: 'GET',
+            type: _type,
             url: _url ,
-            async: false,
+            data: _data,
+            async: true,
             complete: function( obj ){
 
-                _res = obj.responseText;
+                _call_back( obj.responseText );
 
             } ,
             dataType: 'json'
         });
-        return _res;
+
     },
 
-    homepage_news_list: function( _topic_id, _start, _count ){
-        var _url = "http://114.215.82.131:8888/Time/services/homepage/{" + _topic_id + "}?start=" + _start + "&count=" + _count;
+    homepage_news_list: function( _topic_id, _start, _count, _call_back ){
+        var _url = server_communication.get_server_url_prefix() + "homepage/{" + _topic_id + "}?start=" + _start + "&count=" + _count;
         console.log( _url );
-        var _res = server_communication.do_get( _url, null );
-        return _res;
+        server_communication.do_get( _url, null, _call_back );
     },
 
-    topic_list: function( _start, _count ){
-        var _url = "http://114.215.82.131:8888/Time/services/topic/?start=" + _start + "&count=" + _count;
+    topic_list: function( _start, _count, _call_back ){
+        var _url = server_communication.get_server_url_prefix() + "topic/?start=" + _start + "&count=" + _count;
         console.log( _url );
-        var _res = server_communication.do_get( _url, null );
-        return _res;
+        server_communication.do_get( _url, null, _call_back );
+    },
+
+    topic_details: function( _topic_id, _start, _count, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "topic/{" + _topic_id + "}?start=" + _start + "&count=" + _count;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
+    },
+
+    subscribe_recommendation: function( _data, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "subscribe/recommendation";
+        console.log( _url );
+        server_communication.do_post( _url, _data, _call_back );
+    },
+
+    subscribe_query: function( _key_word, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "subscribe/query?key_word=" + _key_word;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
+    },
+
+    news_details: function( _news_id, _news_type, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "news/{" + _news_id + "}?type=" + _news_type;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
+    },
+
+    news_comments: function( _news_id, _start, _count, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "comments/query?news_id=" + _news_id + "&start=" + _start + "&count=" + _count;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
+    },
+
+    discussion_room: function( _topic_id, _call_back ) {
+        var _url = server_communication.get_server_url_prefix() + "topic/discussion?id=" + _topic_id;
+        console.log( _url );
+        server_communication.do_get( _url, null, _call_back );
     }
 };

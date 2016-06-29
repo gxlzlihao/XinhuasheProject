@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.applicationcraft.plugins.PGSQLitePlugin": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
         }
@@ -17,7 +14,6 @@
     "dependent_plugins": {},
     "modules": [],
     "plugin_metadata": {
-        "com.applicationcraft.plugins.PGSQLitePlugin": "2.0.0",
         "cordova-plugin-whitelist": "1.2.2"
     }
 }
