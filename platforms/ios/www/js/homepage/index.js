@@ -21,25 +21,44 @@ var app = {
     initialize: function() {
         this.bindEvents();
     },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
+   
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
+    
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        var db = window.sqlitePlugin.openDatabase({name: 'xinhuashe.db', location: 'default'});
+
+        db.executeSql("DROP TABLE IF EXISTS tt");
+        db.executeSql("CREATE TABLE tt (data)");
+        db.transaction(function(tx) {
+
+            $.ajax({
+                url: 'https://api.github.com/users/litehelpers/repos',
+                dataType: 'json',
+                success: function(res) {
+                    console.log('Got AJAX response: ' + JSON.stringify(res));
+                    $.each(res, function(i, item) {
+                        console.log('REPO NAME: ' + item.name);
+                        tx.executeSql("INSERT INTO tt values (?)", JSON.stringify(item.name));
+                        alert("lihao");
+                    });
+                }
+            });
+        }, function(e) {
+            alert('Transaction error: ' + e.message);
+        }, function() {
+            // Check results:
+            db.executeSql('SELECT COUNT(*) FROM tt', [], function(res) {
+                alert('Check SELECT result: ' + JSON.stringify(res.rows.item(0)));
+            });
+        });
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-
         console.log('Received Event: ' + id);
-
     }
 };
 
@@ -47,21 +66,6 @@ app.initialize();
 
 
 $(document).ready(function(){
-
-    // var db = new PGSQLitePlugin("testdb.sqlite3", function(dbResult, dbObject){
-    //     alert("Database status=" + dbResult.status);
-    //     alert("Database version=" + dbResult.version);
-    //     db = dbObject;
-    //
-    //     db.open(function(){
-    //         alert("open succeeds!");
-    //     }, function(){
-    //         alert("open error occurs!");
-    //     });
-    //
-    // }, function(err){
-    //     alert("Error create database::err=" + err);
-    // });
 
     var _subscribe_topics = new Array();
     if ( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) == null ) {

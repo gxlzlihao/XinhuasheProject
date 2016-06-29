@@ -42,8 +42,10 @@
         <!-- The javascript library -->
         <script type="text/javascript" src="js/common/jquery/jquery-2.2.3.min.js"></script>
         <script type="text/javascript" src="js/common/jquery/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/common/bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="js/common/bower_components/ngCordova/dist/ng-cordova.js"></script>
+        <script type="text/javascript" src="js/common/app.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="pgsqliteplugin.js"></script>
         <script type="text/javascript" src="js/common/common.js"></script>
         <script type="text/javascript" src="js/common/viewport_adjust.js"></script>
         <script type="text/javascript" src="js/common/server_communication.js"></script>
@@ -51,7 +53,7 @@
 
         <title>Homepage</title>
     </head>
-    <body>
+    <body ng-app="starter">
 
         <div class="main">
             <div class="navigation_bar">
