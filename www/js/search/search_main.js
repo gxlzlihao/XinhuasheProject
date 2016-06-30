@@ -3,6 +3,58 @@
  */
 $(document).ready(function(){
 
+    var prepare_history_database = function( _db ) {
+        _db.executeSql('CREATE TABLE IF NOT EXISTS ' + common.getSearchHistoryTag() + ' ( id integer primary key, name string, count integer ) ');
+        _db.executeSql('SELECT name, count FROM ' + common.getSearchHistoryTag() , [], function( res ) {
+            if ( res.rows.length == 0 ) {
+                console.log( "No past history" );
+                window.localStorage.setItem( common.getSearchHistoryTag(), new Array() );
+            } else {
+                var _history = new Array();
+                for ( var j = 0; j < res.rows.length; ++j ) {
+                    var _n = new Object();
+                    _n.name = res.rows.item(j);
+                    _n.count = res.rows.item(j);
+                    _history.push( _n );
+
+                    console.log( "Succeed received one history item with name: " + _n.name + " and count: " + _n.count );
+                }
+                window.localStorage.setItem( common.getSearchHistoryTag(), _history );
+            }
+        });
+        _db.close(function() {
+            console.log('database is closed ok');
+        });
+    }
+
+    var update_history_record = function( _db, _name, _count ) {
+        var _sql = "UPDATE " + common.getSearchHistoryTag() + " h SET h.count=" + _count + " WHERE h.name=" + _name;
+        _db.executeSql( _sql, [], function( res ) {
+            console.log("rowsAffected: " + res.rowsAffected);
+        },
+        function( error ) {
+            console.log('UPDATE error: ' + error.message);
+        });
+        _db.close(function() {
+            console.log('database is closed ok');
+        });
+    }
+
+    var insert_history_record = function( _db, _name, _count ) {
+        var _sql = "INSERT INTO " + common.getSearchHistoryTag() + " (name, count) VALUES (?,?)";
+        _db.executeSql( _sql, [ _name, _count ], function( res ) {
+                console.log("rowsAffected: " + res.rowsAffected);
+            },
+            function( error ) {
+                console.log('INSERT error: ' + error.message);
+            });
+        _db.close(function() {
+            console.log('database is closed ok');
+        });
+    }
+
+    prepare_history_database( common.getDatabaseHandler() );
+
     var sort_search_history = function( _a, _b ) {
         return _a.count > _b.count;
     }
@@ -14,6 +66,8 @@ $(document).ready(function(){
             if ( _history[i].name == _key_word ) {
                 _already_existed = true;
                 _history[i].count = _history[i].count + 1;
+
+                update_history_record( common.getDatabaseHandler(), _history[i].name, _history[i].count );
             }
         }
         if ( _already_existed == false ) {
@@ -21,6 +75,8 @@ $(document).ready(function(){
             _n.name = _key_word;
             _n.count = 1;
             _history.push( _n );
+
+            insert_history_record( common.getDatabaseHandler(), _key_word, 1 );
         }
         _history = _history.sort( sort_search_history );
         window.localStorage.setItem( common.getSearchHistoryTag(), _history );
@@ -36,16 +92,12 @@ $(document).ready(function(){
         window.location.href = window.location.href.replace( 'search.html', 'search_results.html?key_word=' + _key_word );
     }
 
-    if ( window.localStorage.getItem( common.getSearchHistoryTag() ) == null ) {
-        // TODO: 从本地SQL数据库读取数据
-    } else {
-        var _history = window.localStorage.getItem( common.getSearchHistoryTag() );
-        for ( var k = 0; k < _history.length; ++k ) {
-            var _name = _history[k].name;
-            var _n = $("<span>" + _name + "</span>");
-            _n.appendTo( $('div.history') );
-            _n.click( search_hint_press );
-        }
+    var _history = window.localStorage.getItem( common.getSearchHistoryTag() );
+    for ( var k = 0; k < _history.length; ++k ) {
+        var _name = _history[k].name;
+        var _n = $("<span>" + _name + "</span>");
+        _n.appendTo( $('div.history') );
+        _n.click( search_hint_press );
     }
 
     $('button#search_submit').click(function(){
