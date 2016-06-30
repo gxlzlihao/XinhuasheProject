@@ -43,6 +43,23 @@ var common = {
         return null; //返回参数值
     },
 
+    getDatabaseHandler: function() {
+        var _db_name = "xinhuashe.db";
+        return window.sqlitePlugin.openDatabase({name: _db_name, location: 'default'} ,function( _db ){
+            console.log( "Succeeded opening the database " + _db_name );
+        }, function( _error ){
+            console.log( "Failed to open the database with error: " + JSON.stringify( _error ) );
+        });
+    },
+
+    getDefaultSubscribeTopicIds: function() {
+        return ['6','7','8','9','10'];
+    },
+
+    getDefaultSubscribeTopicNames: function() {
+        return ['财经','国际','时政','体育','文化'];
+    },
+
     getLocalSubscribeTopicTag : function () {
         return "local_subscribe_topics";
     },

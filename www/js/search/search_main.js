@@ -60,6 +60,31 @@ $(document).ready(function(){
         window.history.go(-1);
     });
 
+    var clear_section = function( _node ) {
+        _node.children('span').each(function(){
+            if ( !$(this).is('.section_title') ) {
+                $(this).remove();
+            }
+        });
+    }
+
+    var process_search_recommendation = function( _d ) {
+        var _result = $.parseJSON( _d )[0].result;
+        var _data = $.parseJSON( _d )[0].data;
+        if ( _result == false || _result == null ) {
+            alert( "Failed to get data from the remote server!" );
+        } else {
+            clear_section( $('div.hot_searches') );
+            for ( var i = 0; i < _data.length; ++i ) {
+                var _n = $("<span>" + _data[i].title + "</span>");
+                _n.appendTo( $('div.hot_searches') );
+                _n.click( search_hint_press );
+            }
+        }
+    }
+
+    server_communication.search_recommendation( 5, process_search_recommendation );
+
     var process_search_hints = function( _d ) {
 
         var _result = $.parseJSON( _d )[0].result;
@@ -72,16 +97,8 @@ $(document).ready(function(){
             $('div.children_search').css({'display':'block'});
             $('div.related_people').css({'display':'block'});
 
-            $('div.children_search').children('span').each(function(){
-                if ( !$(this).is('.section_title') ) {
-                    $(this).remove();
-                }
-            });
-            $('div.related_people').children('span').each(function(){
-                if ( !$(this).is('.section_title') ) {
-                    $(this).remove();
-                }
-            });
+            clear_section( $('div.children_search') );
+            clear_section( $('div.related_people') );
 
             var _people = _data.Related_people;
             var _children = _data.Children_searches;
