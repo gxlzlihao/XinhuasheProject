@@ -6,10 +6,30 @@ $(document).ready(function(){
 
     var _local_subscribe_topics = JSON.parse( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) );
 
+    var remove_with_id_from_sql = function( _db, _topic_id ) {
+        var _sql = "DELETE FROM " + common.getLocalSubscribeTopicTag() + " WHERE id='" + _topic_id + "'";
+        _db.executeSql( _sql , [], function( res ) {
+            console.log("Succeeded removing " + res.rowsAffected + " row with id " + _topic_id);
+        });
+        _db.close(function() {
+            console.log('database is closed ok');
+        });
+    }
+
+    var add_to_sql = function( _db, _topic_id, _topic_name ) {
+        var _sql = "INSERT INTO " + common.getLocalSubscribeTopicTag() + " (id, name) VALUES (?,?)";
+        _db.executeSql( _sql , [ _topic_id, _topic_name ], function( res ) {
+            console.log("Succeeded adding " + res.rowsAffected + " row with id " + _topic_id);
+        });
+        _db.close(function() {
+            console.log('database is closed ok');
+        });
+    }
+
     var remove_subscribe_item = function() {
         var _topic_id = $(this).siblings('span.subscribe_item_id').text();
 
-        // TODO: 从本地SQL数据库中删除id为_topic_id的订阅栏目
+        remove_with_id_from_sql( common.getDatabaseHandler(), _topic_id );
 
         var _array = JSON.parse( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) );
         var _new_array = new Array();
@@ -32,7 +52,7 @@ $(document).ready(function(){
         _array.push( _obj );
         window.localStorage.setItem( common.getLocalSubscribeTopicTag(), JSON.stringify( _array ) );
 
-        //    TODO: 更新本地SQL数据库中的数据
+        add_to_sql( common.getDatabaseHandler(), _id, _name );
 
         var _new_topic = $("<div class='subscribe_item'>" +
             "<span class='subscribe_item_id'>" + _id + "</span>" +

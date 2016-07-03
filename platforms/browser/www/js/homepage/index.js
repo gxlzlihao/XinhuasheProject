@@ -16,6 +16,61 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var prepare_subscribe_topic_database = function( _db ) {
+
+    function addSubscribeTopic( _id, _name ) {
+
+        _db.transaction(function (tx) {
+
+            var query = "INSERT INTO " + common.getLocalSubscribeTopicTag + " ( id, name ) VALUES (?,?)";
+
+            tx.executeSql(query, [ _id, _name ], function(tx, res) {
+                    console.log("insertId: " + res.insertId + " -- ");
+                    console.log("rowsAffected: " + res.rowsAffected + " -- ");
+                },
+                function(tx, error) {
+                    console.log('INSERT error: ' + error.message);
+                });
+        }, function(error) {
+            console.log('transaction error: ' + error.message);
+        }, function() {
+            console.log('transaction ok -- succeeded adding one subscribe topic into SQL database.');
+        });
+    }
+
+    _db.executeSql('CREATE TABLE IF NOT EXISTS ' + common.getLocalSubscribeTopicTag() + ' ( id string primary key, name string ) ');
+    _db.executeSql('SELECT id, name FROM ' + common.getLocalSubscribeTopicTag() , [], function( res ) {
+        if ( res.rows.length == 0 ) {
+            var _subscribe_topics = new Array();
+
+            for ( var p = 0; p < common.getDefaultSubscribeTopicIds.length; ++p ) {
+                _subscribe_topics.push( JSON.parse( "{'id':'" + common.getDefaultSubscribeTopicIds()[p] + "', 'name':'" + common.getDefaultSubscribeTopicNames()[p] + "'}" ) );
+                addSubscribeTopic( common.getDefaultSubscribeTopicIds()[p], common.getDefaultSubscribeTopicNames()[p] );
+            }
+
+            window.localStorage.setItem( common.getLocalSubscribeTopicTag(), JSON.stringify( _subscribe_topics ) );
+
+        } else {
+            var _array = new Array();
+            for ( var j = 0; j < res.rows.length; ++j ) {
+                var _item = res.rows.item(j);
+                var _obj = new Object();
+                _obj.id = _item.id;
+                _obj.name = _item.name;
+                _array.push( _obj );
+
+                console.log( "received one item with id:" + _obj.id + " and name:" + _obj.name );
+            }
+            window.localStorage.setItem( common.getLocalSubscribeTopicTag, JSON.stringify( _array ) );
+        }
+    });
+
+    _db.close(function() {
+        console.log('database is closed ok');
+    });
+
+}
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -28,31 +83,8 @@ var app = {
     
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        var db = window.sqlitePlugin.openDatabase({name: 'xinhuashe.db', location: 'default'});
-
-        db.executeSql("DROP TABLE IF EXISTS tt");
-        db.executeSql("CREATE TABLE tt (data)");
-        db.transaction(function(tx) {
-            alert("lihao");
-            // $.ajax({
-            //     url: 'https://api.github.com/users/litehelpers/repos',
-            //     dataType: 'json',
-            //     success: function(res) {
-            //         console.log('Got AJAX response: ' + JSON.stringify(res));
-            //         $.each(res, function(i, item) {
-            //             console.log('REPO NAME: ' + item.name);
-            //             tx.executeSql("INSERT INTO tt values (?)", JSON.stringify(item.name));
-            //         });
-            //     }
-            // });
-        }, function(e) {
-            alert('Transaction error: ' + e.message);
-        }, function() {
-            // Check results:
-            db.executeSql('SELECT COUNT(*) FROM tt', [], function(res) {
-                alert('Check SELECT result: ' + JSON.stringify(res.rows.item(0)));
-            });
-        });
+        var _db = common.getDatabaseHandler();
+        prepare_subscribe_topic_database( _db );
 
     },
     // Update DOM on a Received Event
@@ -68,16 +100,11 @@ $(document).ready(function(){
 
     var _subscribe_topics = new Array();
     if ( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) == null ) {
-        // TODO: 从本地SQL数据库中读取当前订阅的新闻栏目,并保存到window.localStorage之中,如果SQL数据库中没有数据,则插入默认数据
-        // TODO: 以下代码为临时代码,可以在插入SQL数据库操作代码后删除
 
-        _subscribe_topics.push( JSON.parse( "{'id':'6', 'name':'财经'}" ) );
-        _subscribe_topics.push( JSON.parse( "{'id':'7', 'name':'国际'}" ) );
-        _subscribe_topics.push( JSON.parse( "{'id':'8', 'name':'时政'}" ) );
-        _subscribe_topics.push( JSON.parse( "{'id':'9', 'name':'体育'}" ) );
-        _subscribe_topics.push( JSON.parse( "{'id':'10', 'name':'文化'}" ) );
+        var _db = common.getDatabaseHandler();
+        prepare_subscribe_topic_database( _db );
 
-        window.localStorage.setItem( common.getLocalSubscribeTopicTag(), JSON.stringify( _subscribe_topics ) );
+        _subscribe_topics = window.localStorage.getItem( common.getLocalSubscribeTopicTag() );
     } else {
         _subscribe_topics = JSON.parse( window.localStorage.getItem( common.getLocalSubscribeTopicTag() ) );
     }

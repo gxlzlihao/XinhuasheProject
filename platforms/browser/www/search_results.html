@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=0.575, maximum-scale=0.575, minimum-scale=0.575, width=device-width">
@@ -16,6 +16,8 @@
     <script type="text/javascript" src="js/common/jquery/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="js/common/jquery/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="js/common/viewport_adjust.js"></script>
+    <script type="text/javascript" src="js/common/common.js"></script>
+    <script type="text/javascript" src="js/common/server_communication.js"></script>
     <script type="text/javascript" src="js/search_results/search_results_main.js"></script>
 
     <title>Search Results</title>
@@ -34,72 +36,37 @@
     <div id="result_list">
         <div class="result_item">
             <h1>话题</h1>
-            <div class="topic_result_item">
-                <div class="title">
-                    <span class="title">两会</span>
-                    <image class="enter_details" src="img/search_results/arrow_right_gray.png" alt="img/search_results/arrow_right_gray.png"></image>
-                </div>
-                <div class="banner">
-                    <image src="img/search_results/banner_picture.png" alt="img/search_results/banner_picture.png"></image>
-                </div>
-            </div>
+            <!--<div class="topic_result_item">-->
+                <!--<div class="title">-->
+                    <!--<span class="title">两会</span>-->
+                    <!--<image class="enter_details" src="img/search_results/arrow_right_gray.png" alt="img/search_results/arrow_right_gray.png"></image>-->
+                    <!--<span class="topic_id" style="display:none">12</span>-->
+                <!--</div>-->
+                <!--<div class="banner">-->
+                    <!--<image src="img/search_results/banner_picture.png" alt="img/search_results/banner_picture.png"></image>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
         <div class="result_item">
             <h1>全网新闻</h1>
-            <div class="news_result_item">
-                <div class="left">
-                    <image src="img/search_results/result_picture.png" alt="img/search_results/result_picture.png"></image>
-                </div>
-                <div class="right">
-                    <div class="news_title">
-                        <span>习近平两会新语之"意"内涵</span>
-                    </div>
-                    <div class="news_item_info">
-                        <div class="reliability">
-                            <image src="img/search_results/credit_green.png" alt="img/search_results/credit_green.png"></image>
-                            <span>信</span>
-                        </div>
-                        <span class="news_source">新华社</span>
-                        <span class="news_comment_count">2993条评论</span>
-                    </div>
-                </div>
-            </div>
-            <div class="news_result_item">
-                <div class="left">
-                    <image src="img/search_results/result_picture.png" alt="img/search_results/result_picture.png"></image>
-                </div>
-                <div class="right">
-                    <div class="news_title">
-                        <span>习近平两会新语之"意"内涵</span>
-                    </div>
-                    <div class="news_item_info">
-                        <div class="reliability">
-                            <image src="img/search_results/credit_orange.png" alt="img/search_results/credit_orange.png"></image>
-                            <span>疑</span>
-                        </div>
-                        <span class="news_source">新华社</span>
-                        <span class="news_comment_count">2993条评论</span>
-                    </div>
-                </div>
-            </div>
-            <div class="news_result_item">
-                <div class="left">
-                    <image src="img/search_results/result_picture.png" alt="img/search_results/result_picture.png"></image>
-                </div>
-                <div class="right">
-                    <div class="news_title">
-                        <span>习近平两会新语之"意"内涵</span>
-                    </div>
-                    <div class="news_item_info">
-                        <div class="reliability">
-                            <image src="img/search_results/credit_red.png" alt="img/search_results/credit_red.png"></image>
-                            <span>谣</span>
-                        </div>
-                        <span class="news_source">新华社</span>
-                        <span class="news_comment_count">2993条评论</span>
-                    </div>
-                </div>
-            </div>
+            <!--<div class="news_result_item">-->
+                <!--<div class="left">-->
+                    <!--<image src="img/search_results/result_picture.png" alt="img/search_results/result_picture.png"></image>-->
+                <!--</div>-->
+                <!--<div class="right">-->
+                    <!--<div class="news_title">-->
+                        <!--<span>习近平两会新语之"意"内涵</span>-->
+                    <!--</div>-->
+                    <!--<div class="news_item_info">-->
+                        <!--<div class="reliability">-->
+                            <!--<image src="img/search_results/credit_green.png" alt="img/search_results/credit_green.png"></image>-->
+                            <!--<span>信</span>-->
+                        <!--</div>-->
+                        <!--<span class="news_source">新华社</span>-->
+                        <!--<span class="news_comment_count">2993条评论</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
 
