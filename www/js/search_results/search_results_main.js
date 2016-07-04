@@ -3,13 +3,17 @@
  */
 $(document).ready(function(){
 
+    var make_new_url = function( _postfix ) {
+        var _ss = window.location.href.split('/');
+        var _base = _ss[0] + "/" + _ss[1] + "/" + _ss[2] + "/";
+        return _base + _postfix;
+    }
+
     $('button#search_submit').click(function(){
         var _input_key_word = $('div.input_field').children('input').val();
 
         console.log( "Go to the search result page with new key word - " + _input_key_word );
-        var _ss = window.location.href.split('/');
-        var _base = _ss[0] + "/" + _ss[1] + "/" + _ss[2] + "/";
-        var _new_url = _base + 'search_results.html?key_word=' + _input_key_word;
+        var _new_url = make_new_url( 'search_results.html?key_word=' + _input_key_word );
         window.location.href = _new_url;
     });
 
@@ -42,7 +46,7 @@ $(document).ready(function(){
                 _n.appendTo( _topic_section );
                 _n.click(function(){
                     console.log("Go to the topic details page");
-                    window.location.href = window.location.href.replace( 'search_results.html', 'topic_details.html?topic_id=' + _topic_item.id );
+                    window.location.href = make_new_url( 'topic_details.html?topic_id=' + _topic_item.id );
                 });
             }
 
@@ -78,7 +82,7 @@ $(document).ready(function(){
                 _n.appendTo( _news_section );
                 _n.click(function(){
                     console.log("Go to the news details page");
-                    window.location.href = window.location.href.replace('search_results.html', 'news_details.html?news_id=' + _news_item.id + '&type=column');
+                    window.location.href = make_new_url( 'news_details.html?news_id=' + _news_item.id + '&type=column');
                 });
             }
         }
