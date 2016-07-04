@@ -3,6 +3,16 @@
  */
 $(document).ready(function(){
 
+    $('button#search_submit').click(function(){
+        var _input_key_word = $('div.input_field').children('input').val();
+
+        console.log( "Go to the search result page with new key word - " + _input_key_word );
+        var _ss = window.location.href.split('/');
+        var _base = _ss[0] + "/" + _ss[1] + "/" + _ss[2] + "/";
+        var _new_url = _base + 'search_results.html?key_word=' + _input_key_word;
+        window.location.href = _new_url;
+    });
+
     var _key_word = common.getUrlParam( "key_word" );
 
     var process_search_results = function( _d ) {
